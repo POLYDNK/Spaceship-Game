@@ -1,0 +1,2 @@
+- Current game build is located in the "Builds" folder.
+- gml files can be read by any text editor, but an extension would be needed for proper code highlighting.

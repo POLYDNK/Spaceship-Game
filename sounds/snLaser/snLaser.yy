@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 0.1,
   "preload": false,
@@ -13,8 +14,8 @@
   "soundFile": "snLaser.mp3",
   "duration": 1.344,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Lasers",
+    "path": "folders/Sounds/Lasers.yy",
   },
   "resourceVersion": "1.0",
   "name": "snLaser",

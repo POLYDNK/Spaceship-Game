@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Candara",
   "styleName": "Regular",
   "size": 14.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":4,"h":23,"character":32,"shift":4,"offset":0,},
     "33": {"x":217,"y":52,"w":3,"h":23,"character":33,"shift":5,"offset":1,},

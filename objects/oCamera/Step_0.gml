@@ -16,8 +16,8 @@ y += (yTo - y) / 5;
 //y = clamp(y, view_h_half, room_height - view_h_half);
 
 // Screen Shake
-x+= random_range(-shake_remain, shake_remain);
-y+= random_range(-shake_remain, shake_remain);
+x += random_range(-shake_remain, shake_remain);
+y += random_range(-shake_remain, shake_remain);
 shake_remain = max(0, shake_remain - ((1 / shake_length) * shake_magnitude));
 
 // Update Camera View
@@ -32,11 +32,24 @@ if (layer_exists("StarsFar"))
 
 if (layer_exists("StarsMed"))
 {
-	layer_x("StarsMed", x / 1.3);
-	layer_y("StarsMed", y / 1.3);
+	layer_x("StarsMed", x / 1.11);
+	layer_y("StarsMed", y / 1.11);
+}
+
+if (layer_exists("ZoneBackground"))
+{
+	layer_x("ZoneBackground", x / 1.12);
+	layer_y("ZoneBackground", y / 1.12);
+}
+
+if (layer_exists("DefaultBackground"))
+{
+	layer_x("DefaultBackground", x / 1.12);
+	layer_y("DefaultBackground", y / 1.12);
 }
 
 // Zooming
+/*
 var newWidth  = camera_get_view_width(cam)  + zoomSlider.sliderValue;
 var newHeight = camera_get_view_height(cam) + zoomSlider.sliderValue;
 
@@ -47,3 +60,4 @@ if (camera_get_view_width(cam) != newWidth)
 	view_w_half = newWidth / 2;
 	view_h_half = newHeight / 2;
 }
+*/

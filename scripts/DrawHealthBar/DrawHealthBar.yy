@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Drawing",
+    "path": "folders/Scripts/Drawing.yy",
   },
   "resourceVersion": "1.0",
   "name": "DrawHealthBar",

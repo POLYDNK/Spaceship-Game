@@ -1,0 +1,3 @@
+/// @desc Vars
+
+selected = false;

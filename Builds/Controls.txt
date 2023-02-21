@@ -1,0 +1,4 @@
+Movement: WASD
+Shooting: Arrow Keys
+Zooming: R, T
+Fullscreen: Ctrl + F

@@ -3,7 +3,7 @@
 // Decrease duration
 duration--;
 
-if (duration <= 0)
+if (duration <= 0 || instance_exists(shooter) == false)
 {
 	instance_destroy();
 }	

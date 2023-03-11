@@ -1,10 +1,14 @@
 /// @desc Attack Current Target
 
 // Common Vars
-if (currentTarget != noone)
+var ang = 0;
+var dist = 0;
+
+// Calculate angle and distance to target if it exists
+if (instance_exists(currentTarget))
 {
-	var ang  = point_direction(x,y,currentTarget.x,currentTarget.y); // angle to target
-	var dist = distance_to_object(currentTarget);                    // distance to target
+	ang  = point_direction(x,y,currentTarget.x,currentTarget.y); // angle to target
+	dist = distance_to_object(currentTarget);                    // distance to target
 }
 
 // Rotate Towards target

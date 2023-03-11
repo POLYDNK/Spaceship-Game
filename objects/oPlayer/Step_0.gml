@@ -1,7 +1,5 @@
 /// @desc Movement, Rotation, Firing, Item Collection
 
-var new_max_speed = maxSpeed+(global.playerInventory.get_engine_power()/mass);
-
 #region Get input from player
 if (hascontrol) && (alive)
 {
@@ -32,21 +30,7 @@ else
 	key_shootUp    = 0;
 	key_shootDown  = 0;
 }
-#endregion
 
-#region Actives
-
-if (key_space)
-{
-	// Just activate everything with space for now
-	global.playerInventory.module_activate_all_type(TYPE.ACTIVE);
-}
-
-#endregion
-
-#region Movement
-
-// Calculate Forces
 var hMove = key_moveRight - key_moveLeft;
 var vMove = key_moveDown - key_moveUp;
 
@@ -57,34 +41,14 @@ if (hMove != 0 or vMove != 0)
 	controlling = true;
 }
 
-hForce = hMove * acceleration;
-vForce = vMove * acceleration;
+#endregion
 
-// Apply Forces
-hsp += hForce;
-vsp += vForce;
+#region Actives
 
-// Drag
-if (hForce == 0)
+if (key_space)
 {
-	hsp *= dragPercent;
-}
-
-if (vForce == 0)
-{
-	vsp *= dragPercent;
-}
-
-// Calculate Current Speed
-currentSpeed = point_distance(x, y, x+hsp, y+vsp);
-
-// Bound Current Speed to Max Speed
-if (currentSpeed > new_max_speed)
-{
-	ratio = new_max_speed / currentSpeed;
-	
-	hsp *= ratio;
-	vsp *= ratio;
+	// Just activate everything with space for now
+	global.playerInventory.module_activate_all_type(TYPE.ACTIVE);
 }
 
 #endregion
@@ -134,6 +98,47 @@ else
 			turning = false;
 		}
 	}
+}
+
+#endregion
+
+#region Movement
+
+// Calculate Forces
+hForce = hMove * acceleration;
+vForce = vMove * acceleration;
+
+// Apply Forces
+hsp += hForce;
+vsp += vForce;
+
+// Drag
+if (hForce == 0)
+{
+	hsp *= dragPercent;
+}
+
+if (vForce == 0)
+{
+	vsp *= dragPercent;
+}
+
+// Get max speed
+var new_max_speed = maxSpeed+(global.playerInventory.get_engine_power()/mass);
+var angDiff = abs(angle_difference(image_angle, point_direction(x, y, x+hsp, y+vsp)));
+
+new_max_speed *= 1 - ((angDiff/180) * horizontalPenalty);
+
+// Calculate Current Speed
+currentSpeed = point_distance(x, y, x+hsp, y+vsp);
+
+// Bound Current Speed to Max Speed
+if (currentSpeed > new_max_speed)
+{
+	ratio = new_max_speed / currentSpeed;
+	
+	hsp *= ratio;
+	vsp *= ratio;
 }
 
 #endregion
@@ -289,8 +294,6 @@ if (hascontrol) && (alive)
 				break;
 		}
 	}
-
-	
 }
 
 #endregion

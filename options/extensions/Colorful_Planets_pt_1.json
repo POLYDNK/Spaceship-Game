@@ -1,9 +1,6 @@
 {
-  "extensionId": {
-    "name": "Colorful_Planets_pt_1",
-    "path": "extensions/Colorful_Planets_pt_1/Colorful_Planets_pt_1.yy"
-  },
-  "resourceVersion": "1.0",
   "resourceType": "GMExtensionConfigSet",
-  "configurables": null
+  "configurables": null,
+  "extensionId": null,
+  "resourceVersion": "1.0"
 }

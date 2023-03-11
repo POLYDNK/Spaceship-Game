@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Setup
 
 targetAngle = 0; // Target Angle
 myState = AI.IDLE; // State

@@ -38,14 +38,36 @@ else
 	
 	var m1 = mass;
 	var m2 = cObj.mass;
+	
+	
 	var A = m1 + m2;
 	var B = m1 - m2;
 	var C = 2 * m2;
 	var D = 2 * m1;
 
+	/*
 	hsp = ((B / A) * v1x) + ((C / A) * v2x) * 0.5;
 	cObj.hsp = ((D / A) * v1x) - ((B / A) * v2x);
 	
 	vsp = ((B / A) * v1y) + ((C / A) * v2y) * 0.5;
 	cObj.vsp = ((D / A) * v1y) - ((B / A) * v2y);
+	*/
+	
+	// Pushing
+	var ang = point_direction(x, y, cObj.x, cObj.y);
+							  
+	x += lengthdir_x(-2, ang);
+	y += lengthdir_y(-2, ang);
+	
+	// Apply formula for inelastic collision
+	var pLoss = 0.999;
+	
+	var vX = ((m1*v1x*pLoss) + (m2*v2x*pLoss)) / (m1+m2);
+	var vY = ((m1*v1y*pLoss) + (m2*v2y*pLoss)) / (m1+m2);
+	
+	hsp = vX;
+	cObj.hsp = vX;
+	
+	vsp = vY;
+	cObj.vsp = vY;
 }

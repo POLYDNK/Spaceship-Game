@@ -3,6 +3,9 @@
 // Create Player Inventory Here
 global.playerInventory = new Inventory(18);
 
+// Resources
+global.playerInventory.iron = 0;
+
 // Define Item Types
 enum ITEM
 {
@@ -12,7 +15,8 @@ enum ITEM
 	LASERCANNON,
 	SMALLENGINE,
 	MEDIUMENGINE,
-	SMALLBUBBLE
+	SMALLBUBBLE,
+	MEDIUMBUBBLE
 };
 
 enum TYPE
@@ -50,7 +54,8 @@ function Inventory(slots) constructor
 				break;
 				
 			case ITEM.IRON:
-				inventory[find_blank_slot()] = new Item("Iron", sIron, ITEM.IRON, oIron, oIron, TYPE.MATERIAL);
+				//inventory[find_blank_slot()] = new Item("Iron", sIron, ITEM.IRON, oIron, oIron, TYPE.MATERIAL);
+				iron++;
 				break;
 				
 			case ITEM.LASERMACHINE:
@@ -71,6 +76,10 @@ function Inventory(slots) constructor
 				
 			case ITEM.SMALLBUBBLE:
 				inventory[find_blank_slot()] = new Item("Small Bubble", sSmallBubble, ITEM.SMALLBUBBLE, oSmallBubblePickup, oSmallBubble, TYPE.ACTIVE);
+				break;
+				
+			case ITEM.MEDIUMBUBBLE:
+				inventory[find_blank_slot()] = new Item("Medium Bubble", sMediumBubble, ITEM.MEDIUMBUBBLE, oMediumBubblePickup, oMediumBubble, TYPE.ACTIVE);
 				break;
 				
 			default:
@@ -109,6 +118,11 @@ function Inventory(slots) constructor
 			case ITEM.SMALLBUBBLE:
 				delete inventory[index];
 				inventory[index] = new Item("Small Bubble", sSmallBubble, ITEM.SMALLBUBBLE, oSmallBubblePickup, oSmallBubble, TYPE.ACTIVE);
+				break;
+				
+			case ITEM.MEDIUMBUBBLE:
+				delete inventory[index];
+				inventory[index] = new Item("Medium Bubble", sMediumBubble, ITEM.MEDIUMBUBBLE, oMediumBubblePickup, oMediumBubble, TYPE.ACTIVE);
 				break;
 				
 			default:

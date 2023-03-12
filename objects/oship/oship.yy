@@ -7,7 +7,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"mass","path":"objects/pShootable/pShootable.yy",},"value":"300",},
+  ],
   "parent": {
     "name": "Ships",
     "path": "folders/Objects/Ships.yy",

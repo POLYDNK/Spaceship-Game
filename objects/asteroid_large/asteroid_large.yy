@@ -9,7 +9,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"healthbarColor","path":"objects/pShootable/pShootable.yy",},"value":"$FF00FFFF",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"mass","path":"objects/pShootable/pShootable.yy",},"value":"1000",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"mass","path":"objects/pShootable/pShootable.yy",},"value":"250",},
   ],
   "parent": {
     "name": "FloatingObjects",

@@ -36,3 +36,11 @@ with (instance_create_depth(x, y + 100, depth, asteroid_small))
 	hsp = other.currentSpeed * dcos(other.currentDirection+30) * 2;
 }
 
+// Loot
+var spawnCount = irandom_range(1, 3);
+
+repeat(spawnCount)
+{
+	instance_create_depth(x, y, depth, oIron);
+}
+

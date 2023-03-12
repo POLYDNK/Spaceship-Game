@@ -4,7 +4,7 @@
   "name": "fDamage11",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 13,
+  "ascender": 0,
   "ascenderOffset": 0,
   "bold": false,
   "canGenerateBitmap": true,

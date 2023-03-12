@@ -5,7 +5,8 @@ if (menu_open)
 	// Draw Inner Rectangle
 	draw_set_color(make_color_rgb(160, 160, 160));
 	draw_set_alpha(1);
-	draw_rectangle(margin_x, margin_y, full_x, full_y, false);
+	//draw_rectangle(margin_x, margin_y, full_x, full_y, false);
+	draw_sprite_stretched(sDarkPanels, 0, margin_x, margin_y, full_x - margin_x, full_y - margin_y);
 		
 	// Draw Outer Rectangle
 	draw_set_color(c_navy);

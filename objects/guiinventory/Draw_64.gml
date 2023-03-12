@@ -138,4 +138,10 @@ if (playerShip != noone)
 	{
 		draw_sprite_stretched(global.playerInventory.inventory[item_held]._sprite, 0, mouseX-(box_W/2), mouseY-(box_H/2), box_W, box_H);
 	}
+	
+	// Draw resources
+	var resourceX = invenX + (row_length * box_W) + 50;
+	var resourceY = invenY;
+	
+	draw_text(resourceX, resourceY, "Iron: " + string(global.playerInventory.iron));
 }

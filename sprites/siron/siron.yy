@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sIron",
-  "bbox_bottom": 63,
-  "bbox_left": 0,
-  "bbox_right": 63,
-  "bbox_top": 0,
+  "bbox_bottom": 27,
+  "bbox_left": 3,
+  "bbox_right": 28,
+  "bbox_top": 3,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5266e216-8af7-46b3-96d5-82c93e59174a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5ef0ef16-5e12-4407-9eee-3df3535513be",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 32,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"e67793a8-610a-47a9-8190-9285fb07cf58","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8d491ef8-4b86-4f2f-a58a-32f9e760eb7d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5266e216-8af7-46b3-96d5-82c93e59174a","path":"sprites/sIron/sIron.yy",},},},"Disabled":false,"id":"f64f8fc2-e8af-467a-8b97-993a19c45f4b","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"5ef0ef16-5e12-4407-9eee-3df3535513be","path":"sprites/sIron/sIron.yy",},},},"Disabled":false,"id":"19fc405e-c638-48a8-acb3-3c4e094efb04","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 64,
+  "width": 32,
 }

@@ -10,3 +10,10 @@ audio_play_sound_at(snDestroyed, x, y, 0, 500, 3000, 1, false, 0);
 // Create particle effect
 instance_create_layer(x, y, "Instances", pRockBurst);
 
+// Loot
+var spawnCount = irandom_range(1, 3);
+
+repeat(spawnCount)
+{
+	instance_create_depth(x, y, depth, oIron);
+}

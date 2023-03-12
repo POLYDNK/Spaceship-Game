@@ -1,11 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oSmallBubblePickup",
+  "name": "oMediumBubblePickup",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPickup","path":"objects/oPickup/oPickup.yy",},"propertyId":{"name":"item_type","path":"objects/oPickup/oPickup.yy",},"value":"ITEM.SMALLBUBBLE",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPickup","path":"objects/oPickup/oPickup.yy",},"propertyId":{"name":"item_type","path":"objects/oPickup/oPickup.yy",},"value":"ITEM.MEDIUMBUBBLE",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPickup","path":"objects/oPickup/oPickup.yy",},"propertyId":{"name":"spinning","path":"objects/oPickup/oPickup.yy",},"value":"True",},
   ],
   "parent": {
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sSmallBubble",
-    "path": "sprites/sSmallBubble/sSmallBubble.yy",
+    "name": "sMediumBubble",
+    "path": "sprites/sMediumBubble/sMediumBubble.yy",
   },
   "spriteMaskId": null,
   "visible": true,

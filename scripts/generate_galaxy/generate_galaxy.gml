@@ -1,13 +1,16 @@
 /// @desc Create Solar Systems
 
+randomize(); // New Seed
+
 NUMBER_OF_SOLAR_SYSTEMS = 10; // The number of solar systems in the galaxy
+min_dist = 200;               // Minimum distance solar spawn from each other
+max_dist = 800;               // Maximum distance solar spawn from each other
 edges_empty[0] = -1;          // Edges store indexes of solar systems, -1 = null
 
-var prev_X = 0;
-var prev_Y = 0;
 var curr_X = 0;
 var curr_Y = 0;
 
+global.current_solar_system = 0;
 global.gate_map = ds_map_create();
 
 // Let's generate a graph that represents this galaxy. Solar systems are
@@ -20,8 +23,11 @@ global.galaxy[0] = new solar_system(0, 0, 0, edges_empty); // First solar system
 for (var i = 1; i < NUMBER_OF_SOLAR_SYSTEMS; i++)
 {
 	// Get a random position away from the previous galaxy
-	curr_X = random_range(-500, 500);
-	curr_Y = random_range(-400, 400);
+	var randX = random_range(min_dist, max_dist);
+	curr_X += choose(-randX, randX);
+	
+	var randY = random_range(min_dist, max_dist);
+	curr_Y += choose(-randY, randY);
 	
 	// Create solar system
 	global.galaxy[i] = new solar_system(i, curr_X,curr_Y, edges_empty);
@@ -36,9 +42,9 @@ for (var i = 1; i < NUMBER_OF_SOLAR_SYSTEMS; i++)
 			
 		// If solar system is close enough, then store in the list of edges
 		// and then create the appropriate warp gates
-		if (dist <= 400)
+		if (dist <= point_distance(0, 0, max_dist, max_dist))
 		{
-			var scale = 5000 / dist;
+			var scale = 10000 / dist;
 			var warp_x = (ss.x_pos - curr_X) * scale;
 			var warp_y = (ss.y_pos - curr_Y) * scale;
 			var newGate;

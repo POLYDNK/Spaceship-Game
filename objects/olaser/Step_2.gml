@@ -3,7 +3,7 @@
 // Decrease duration
 duration--;
 
-if (duration <= 0 || instance_exists(shooter) == false)
+if (duration <= 0 || instance_exists(shooter.wielder) == false)
 {
 	instance_destroy();
 }	

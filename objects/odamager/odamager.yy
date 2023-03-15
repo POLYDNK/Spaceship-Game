@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Projectiles",
-    "path": "folders/Objects/Projectiles.yy",
+    "name": "DamageFields",
+    "path": "folders/Objects/Projectiles/DamageFields.yy",
   },
   "parentObjectId": null,
   "persistent": false,

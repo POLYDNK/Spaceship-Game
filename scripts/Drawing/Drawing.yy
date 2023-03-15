@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "SetLayerSprite",
+  "name": "Drawing",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Layers",
-    "path": "folders/Scripts/Layers.yy",
+    "name": "Drawing",
+    "path": "folders/Scripts/Drawing.yy",
   },
 }

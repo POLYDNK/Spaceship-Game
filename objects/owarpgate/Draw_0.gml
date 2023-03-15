@@ -7,4 +7,4 @@ draw_text(x, y-450, "Destination: " + string(destination));
 draw_text(x, y-400, "Warp Timer: " + string(warpTimer));
 
 // Draw Blue Arrow when Offscreen
-DrawBlueArrowWhenOffscreen();
+DrawSpriteWhenOffscreen(sBlueArrow);

@@ -15,17 +15,17 @@ function DrawSolarMap(map_width, map_height, map_x, map_y)
 	
 	// Draw Current Solar System Text
 	DrawSetText(c_white, fMenu, fa_left, fa_top);
-	draw_text(map_x + 5, map_y + 5, "Current System: " + string(Galaxy.current_solar_system));
+	draw_text(map_x + 5, map_y + 5, "Current System: " + string(global.current_solar_system));
 	draw_text(map_x + 5, map_y + 40, "Number of Gates: " + string(ds_map_size(global.gate_map)));
-	var edges_count = array_length(global.galaxy[Galaxy.current_solar_system].edges);
+	var edges_count = array_length(global.galaxy[global.current_solar_system].edges);
 	draw_text(map_x + 5, map_y + 75, "Edges: " + string(edges_count));
 
 	// Draw Solar Systems
 	for (var i = 0; i < array_length(global.galaxy); i++)
 	{
 		var currSolar = global.galaxy[i];     // current solar system
-		var X = currSolar.x_pos + map_half_w; // get x pos
-		var Y = currSolar.y_pos + map_half_h; // get y pos
+		var X = currSolar.x_pos + map_half_w; // calculate x pos
+		var Y = currSolar.y_pos + map_half_h; // calculate y pos
 		var I = currSolar.index;              // get index
 		
 		// Check whether the current solar system is within the drawing space
@@ -56,7 +56,7 @@ function DrawSolarMap(map_width, map_height, map_x, map_y)
 			}
 	
 			// Draw Circle
-			if (i != Galaxy.current_solar_system)
+			if (i != global.current_solar_system)
 			{
 				draw_set_color(c_aqua);
 			}

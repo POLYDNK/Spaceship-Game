@@ -1,6 +1,8 @@
 /// @desc Flash When Hit and Draw Health Bars
 
+image_blend = shipColor;
 draw_self();
+
 
 // Draw HP Bar
 if (drawHealth)

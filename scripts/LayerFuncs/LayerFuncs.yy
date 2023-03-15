@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "DrawSetText",
+  "name": "LayerFuncs",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Drawing",
-    "path": "folders/Scripts/Drawing.yy",
+    "name": "Layers",
+    "path": "folders/Scripts/Layers.yy",
   },
 }

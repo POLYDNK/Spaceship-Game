@@ -28,7 +28,7 @@ if (collision_circle(x, y, 400, oPlayer, false ,true))
 		oPlayer.y = -oPlayer.y;
 		
 		// Go to target solar system
-		Galaxy.current_solar_system = destination;
+		global.current_solar_system = destination;
 		room_goto(target_solar_system.my_room);
 	}
 	

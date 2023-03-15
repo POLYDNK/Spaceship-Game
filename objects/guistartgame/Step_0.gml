@@ -22,6 +22,6 @@ if (holding == true)
 	if (mouseX >= xPos and mouseX <= xPos + width and mouseY >= yPos and mouseY <= yPos + height)
 	{
 		instance_activate_object(oPlayer);
-		room_goto(global.galaxy[Galaxy.current_solar_system].my_room);
+		room_goto(global.galaxy[global.current_solar_system].my_room);
 	}
 }

@@ -13,6 +13,7 @@ enum ITEM
 	IRON,
 	LASERMACHINE,
 	LASERCANNON,
+	SMALLDRILL,
 	SMALLENGINE,
 	MEDIUMENGINE,
 	SMALLBUBBLE,
@@ -66,6 +67,10 @@ function Inventory(slots) constructor
 				inventory[find_blank_slot()] = new Item("Laser Cannon", sLaserCannon, ITEM.LASERCANNON, oLaserCannonPickup, oLaserCannon, TYPE.WEAPON);
 				break;
 				
+			case ITEM.SMALLDRILL:
+				inventory[find_blank_slot()] = new Item("Small Drill", sSmallDrill, ITEM.SMALLDRILL, oSmallDrillPickup, oSmallDrill, TYPE.WEAPON);
+				break;
+				
 			case ITEM.SMALLENGINE:
 				inventory[find_blank_slot()] = new Item("Small Engine", sSmallEngine, ITEM.SMALLENGINE, oSmallEnginePickup, oSmallEngine, TYPE.ENGINE);
 				break;
@@ -103,6 +108,11 @@ function Inventory(slots) constructor
 			case ITEM.LASERCANNON:
 				delete inventory[index];
 				inventory[index] = new Item("Laser Cannon", sLaserCannon, ITEM.LASERCANNON, oLaserCannonPickup, oLaserCannon, TYPE.WEAPON);
+				break;
+				
+			case ITEM.SMALLDRILL:
+				delete inventory[index];
+				inventory[index] = new Item("Small Drill", sSmallDrill, ITEM.SMALLDRILL, oSmallDrillPickup, oSmallDrill, TYPE.WEAPON);
 				break;
 				
 			case ITEM.SMALLENGINE:

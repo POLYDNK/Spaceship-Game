@@ -6,9 +6,10 @@ function generate_solar_system(target_room)
 	// CONSTANTS
 	var center_x = room_width / 2;
 	var center_y = room_height / 2;
-	var NUM_OF_RINGS = 10;
-	var MAX_PLANETS = 5;
-	var RING_DISTANCE = 2000;
+	var NUM_OF_RINGS = 8;
+	var MAX_PLANETS = 8;
+	var RING_SPACING = 2000;
+	var RING_DISTANCE = 500;
 	
 	// VARIABLES
 	var planetsCreated = 0;
@@ -29,8 +30,8 @@ function generate_solar_system(target_room)
 		{
 			// Randomize position and planet type
 			var rand_angle = random(360);
-			var x_dest = dcos(rand_angle) * RING_DISTANCE * i;
-			var y_dest = dsin(rand_angle) * RING_DISTANCE * i;
+			var x_dest = dcos(rand_angle) * RING_SPACING * i + RING_DISTANCE;
+			var y_dest = dsin(rand_angle) * RING_SPACING * i + RING_DISTANCE;
 			var planetRandomizer = irandom(1);
 			
 			// Get a planet type based on the random value

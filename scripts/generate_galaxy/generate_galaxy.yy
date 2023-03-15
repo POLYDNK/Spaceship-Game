@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "DrawTextOutline",
+  "name": "generate_galaxy",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Drawing",
-    "path": "folders/Scripts/Drawing.yy",
+    "name": "GalaxyGeneration",
+    "path": "folders/Scripts/GalaxyGeneration.yy",
   },
 }

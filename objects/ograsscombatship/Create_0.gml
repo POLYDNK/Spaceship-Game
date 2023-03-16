@@ -11,8 +11,8 @@ eng_mod_1 = global.playerInventory.add_ship_module_slot(-120, 0, TYPE.ENGINE, SI
 act_mod_1 = global.playerInventory.add_ship_module_slot(0, 0, TYPE.ACTIVE, SIZE.MEDIUM); 
 
 // Fill Module Slots
-global.playerInventory.replace_module(ITEM.LASERMACHINE, wep_mod_1);
+global.playerInventory.replace_module(ITEM.LASERCANNON, wep_mod_1);
 global.playerInventory.replace_module(ITEM.SMALLDRILL, wep_mod_2);
-global.playerInventory.replace_module(ITEM.LASERMACHINE, wep_mod_3);
+global.playerInventory.replace_module(ITEM.LASERCANNON, wep_mod_3);
 global.playerInventory.replace_module(ITEM.MEDIUMENGINE, eng_mod_1);
 global.playerInventory.replace_module(ITEM.MEDIUMBUBBLE, act_mod_1);

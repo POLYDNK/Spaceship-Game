@@ -6,6 +6,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPlanet","path":"objects/oPlanet/oPlanet.yy",},"propertyId":{"name":"planetName","path":"objects/oPlanet/oPlanet.yy",},"value":"\"Blue Planet\"",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPlanet","path":"objects/oPlanet/oPlanet.yy",},"propertyId":{"name":"dialogue","path":"objects/oPlanet/oPlanet.yy",},"value":"global.blue_planet_message",},
   ],
   "parent": {
     "name": "Planets",

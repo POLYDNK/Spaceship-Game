@@ -3,8 +3,8 @@
 randomize(); // New Seed
 
 NUMBER_OF_SOLAR_SYSTEMS = 10; // The number of solar systems in the galaxy
-min_dist = 200;               // Minimum distance solar spawn from each other
-max_dist = 800;               // Maximum distance solar spawn from each other
+min_dist = 100;                // Minimum distance solar spawn from each other
+max_dist = 200;               // Maximum distance solar spawn from each other
 edges_empty[0] = -1;          // Edges store indexes of solar systems, -1 = null
 
 var curr_X = 0;

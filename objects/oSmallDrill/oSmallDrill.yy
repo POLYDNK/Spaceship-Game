@@ -7,6 +7,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"bulletType","path":"objects/oGun/oGun.yy",},"value":"oDrillDamager",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"firerate","path":"objects/oGun/oGun.yy",},"value":"1",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"projectileDamage","path":"objects/oGun/oGun.yy",},"value":"1",},
   ],
   "parent": {
     "name": "Weapons",

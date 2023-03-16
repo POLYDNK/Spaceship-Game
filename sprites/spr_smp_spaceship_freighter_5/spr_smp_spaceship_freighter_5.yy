@@ -97,7 +97,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9ce4b452-a92d-4c17-86ff-ff2dad8fc8f1","path":"sprites/spr_smp_spaceship_freighter_5/spr_smp_spaceship_freighter_5.yy",},},},"Disabled":false,"id":"994e8df4-7271-42d4-ac89-ae41c316598c","IsCreationKey":false,"Key":20.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
     "yorigin": 0,

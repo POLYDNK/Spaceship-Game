@@ -10,6 +10,7 @@ function generate_solar_system(target_room)
 	var MAX_PLANETS = 8;
 	var RING_SPACING = 2000;
 	var RING_DISTANCE = 500;
+	var ASTEROID_DENSITY = 10;
 	
 	// VARIABLES
 	var planetsCreated = 0;
@@ -53,6 +54,20 @@ function generate_solar_system(target_room)
 			
 			// Enemy spawners on planets?
 			room_instance_add(target_room, center_x + x_dest, center_y + y_dest, oEnemySpawner);
+		}
+		// Asteroid rings
+		else
+		{
+			// Asteroid Spawner
+			repeat(ASTEROID_DENSITY * RING_DISTANCE / 100)
+			{
+				// Randomize position and planet type
+				var rand_angle = random(360);
+				var x_dest = dcos(rand_angle) * RING_SPACING * i + RING_DISTANCE;
+				var y_dest = dsin(rand_angle) * RING_SPACING * i + RING_DISTANCE;
+				
+				room_instance_add(target_room, center_x + x_dest, center_y + y_dest, global.asteroid_spawn.GetRandomObject());
+			}	
 		}
 	}
 }

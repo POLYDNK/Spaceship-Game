@@ -8,10 +8,7 @@ if (cObj != noone)
 {
 	// If the player wasn't colliding on the last step, then
 	// open the dialoue box up
-	if (playerCollision == false)
-	{
-		displayDialogue(planetName, "Hello World!");
-	}
+	dialogue.hidden = false;
 	
 	playerCollision = true;
 }
@@ -19,10 +16,7 @@ else
 {
 	// If the play was colliding on the last step, then
 	// close the dialogue box
-	if (playerCollision == true)
-	{
-		closeDialogue();
-	}
+	dialogue.hidden = true;
 	
 	playerCollision = false;
 }

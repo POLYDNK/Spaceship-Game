@@ -216,12 +216,20 @@ function Inventory(slots) constructor
 		// If Inventory -> Module, then equip it onto the player ship
 		else if (source_index < inventory_size and dest_index >= inventory_size)
 		{
+			// Unequip existing module (if it exists)
+			module_remove(source_index);
+			
+			// Create new module
 			module_spawn(dest_index);
 		}
 		// If Module -> Inventory, then unequip it from the player ship
 		else if (source_index >= inventory_size and dest_index < inventory_size)
 		{
+			//  Unequip existing module
 			module_remove(dest_index);
+			
+			// Create new module (when swapping a module in inventory)
+			module_spawn(source_index);
 		}
 	}
 	

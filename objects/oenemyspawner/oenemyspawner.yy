@@ -32,9 +32,10 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawnArea","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"500","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"safeDistance","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1600","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawnCount","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyToSpawn","filters":[],"listItems":[
-        "\"Item 0\"",
-      ],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oEnemyCombatShip","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"objectToSpawn","filters":[],"listItems":[
+        "oEnemyCombatShip",
+        "oEnemyGrassCombat",
+      ],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"global.enemy_ship_spawn","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawning","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"spawnOnCreate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"debugDraw","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},

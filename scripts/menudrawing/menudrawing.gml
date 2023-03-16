@@ -14,10 +14,11 @@ function DrawSolarMap(map_width, map_height, map_x, map_y)
 	var map_half_h = map_height / 2;
 	
 	// Draw Current Solar System Text
+	var edges_count = array_length(global.galaxy[global.current_solar_system].edges);
+	
 	DrawSetText(c_white, fMenu, fa_left, fa_top);
 	draw_text(map_x + 5, map_y + 5, "Current System: " + string(global.current_solar_system));
 	draw_text(map_x + 5, map_y + 40, "Number of Gates: " + string(ds_map_size(global.gate_map)));
-	var edges_count = array_length(global.galaxy[global.current_solar_system].edges);
 	draw_text(map_x + 5, map_y + 75, "Edges: " + string(edges_count));
 
 	// Draw Solar Systems

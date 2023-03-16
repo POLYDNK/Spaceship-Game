@@ -33,7 +33,7 @@ if (spawning and instance_exists(oPlayer))
 		{
 			var xOff = random_range(-spawnArea/2, spawnArea/2);
 			var yOff = random_range(-spawnArea/2, spawnArea/2);
-			instance_create_layer(x+xOff,y+yOff,spawnLayer,enemyToSpawn);
+			instance_create_layer(x+xOff,y+yOff,spawnLayer,objectToSpawn.GetRandomObject());
 		}
 		
 		// Reset the spawn timer

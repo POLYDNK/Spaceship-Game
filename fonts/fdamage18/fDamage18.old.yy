@@ -1,10 +1,10 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "fDamage14",
+  "name": "fDamage18",
   "AntiAlias": 1,
   "applyKerning": 0,
-  "ascender": 22,
+  "ascender": 0,
   "ascenderOffset": 0,
   "bold": false,
   "canGenerateBitmap": true,

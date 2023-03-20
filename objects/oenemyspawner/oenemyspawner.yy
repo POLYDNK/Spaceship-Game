@@ -42,8 +42,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "Sprite225",
-    "path": "sprites/Sprite225/Sprite225.yy",
+    "name": "sShipSpawnIcon",
+    "path": "sprites/sShipSpawnIcon/sShipSpawnIcon.yy",
   },
   "spriteMaskId": null,
   "visible": true,

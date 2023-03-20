@@ -257,7 +257,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"92879e98-d5a9-46b6-994b-0ce21cf3337a","path":"sprites/spr_smp_floating_ore_yellow/spr_smp_floating_ore_yellow.yy",},},},"Disabled":false,"id":"489b55f6-0502-40a0-b3ef-4485612694be","IsCreationKey":false,"Key":100.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
     "yorigin": 0,

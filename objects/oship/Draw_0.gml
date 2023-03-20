@@ -7,8 +7,19 @@ draw_self();
 // Draw HP Bar
 if (drawHealth)
 {
-	DrawHealthBar(healthbarColor); // Requires Variables
+	// Draw Health Bar
+	var healthbarX = x - (52/2);
+	var healthbarY = y - 50;
+	DrawHealthBar(healthbarColor, healthbarX, healthbarY); // Requires Variables
+	
+	// Draw Shield Bar
+	if (shieldHPMax > 0)
+	{
+		var healthbarY = y - 56;
+		DrawHealthBar(shieldHPColor, healthbarX, healthbarY); // Requires Variables
+	}
 }
+
 
 // Flash When Hit
 if (flash > 0 ) && (destructable == true)

@@ -137,7 +137,7 @@
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"07c38198-b0d5-45d6-b512-1c69cd14a62f","path":"sprites/spr_smp_shield_directed/spr_smp_shield_directed.yy",},},},"Disabled":false,"id":"2109a8f0-5426-49b8-a2f0-f1e058e17663","IsCreationKey":false,"Key":40.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 0,
     "yorigin": 0,

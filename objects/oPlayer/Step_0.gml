@@ -154,6 +154,14 @@ if (currentSpeed > new_max_speed)
 }
 #endregion
 
+#region Effects
+if (currentSpeed > 5)
+{
+	ApplyScreenshake(0.7, currentSpeed/40, 20);
+	ApplyLinearBlur([hsp/10, vsp/10]);
+}
+#endregion
+
 #region Item Collection with a magnetic effect
 // Get objects in radius
 var _list = ds_list_create();

@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "SpaceshipGameStreamlined",
-    "path": "SpaceshipGameStreamlined.yyp",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

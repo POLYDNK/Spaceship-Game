@@ -1,5 +1,8 @@
 /// @desc Initialize Vars
 
+// Inheritance
+event_inherited()
+
 targetAngle = 0;
 followMovement = true;
 turning = false;

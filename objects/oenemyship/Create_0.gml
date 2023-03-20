@@ -1,5 +1,8 @@
 /// @description Setup
 
+// Inheritance
+event_inherited()
+
 targetAngle = 0; // Target Angle
 myState = AI.IDLE; // State
 

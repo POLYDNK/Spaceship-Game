@@ -14,28 +14,24 @@ function DrawSetText(argument0, argument1, argument2, argument3) {
 
 /// @desc DrawHealthBar(color) Draws a Health Bar Relative to the Object Position
 /// @arg color - color of the health bar
-
-function DrawHealthBar(argument0) {
+function DrawHealthBar(color, xPos, yPos) {
 	
 	var healthbarWidth = 52;
 	var healthbarHeight = 6;
-
-	// Update Health Bar Position
-	var healthbarX = x - (healthbarWidth/2);
-	var healthbarY = y - 50;
 	
 	// Draw Health Bar
-	draw_sprite(sHealthBack, 0, healthbarX, healthbarY);
+	draw_sprite(sHealthBack, 0, xPos, yPos);
 	draw_sprite_stretched_ext(sHealthHP,
 							  0,
-							  healthbarX,
-							  healthbarY,
+							  xPos,
+							  yPos,
 							  min((hp/hpMax) * healthbarWidth, healthbarWidth),
 							  healthbarHeight,
-							  argument0,
+							  color,
 							  1);
-	draw_sprite(sHealthBorder, 0, healthbarX, healthbarY);
+	draw_sprite(sHealthBorder, 0, xPos, yPos);
 }
+
 
 /// @description draw_text_outline(x,y,str,outwidth,outcol,outfidelity)
 /// @param x
@@ -63,4 +59,66 @@ function DrawTextOutline(argument0, argument1, argument2, argument3, argument4, 
 
 	draw_set_color(dto_dcol);
 	draw_text(argument0,argument1,string_hash_to_newline(argument2));
+}
+
+
+/// @desc DrawSpriteWhenOffscreen(sprite) Draws a sprite for the player when the object is offscreen
+/// @arg sprite - sprite to draw when object is offscreen
+function DrawSpriteWhenOffscreen(argument0 = sRedArrow){
+	
+	// Red Arrow When Off Screen
+	if (instance_exists(oCamera) and instance_exists(oPlayer))
+	{	
+		var arrowX = x;
+		var arrowY = y;
+		var drawArrow = true;
+	
+		var camX = camera_get_view_x(oCamera.cam);
+		var camY = camera_get_view_y(oCamera.cam);
+		var camW = camera_get_view_width(oCamera.cam);
+		var camH = camera_get_view_height(oCamera.cam);
+	
+		
+		if (x >= camX and x <= camX+camW)
+		{
+			if (y >= camY and y <= camY+camH)
+			{
+				drawArrow = false;
+			}
+		}
+	
+	
+		if (drawArrow)
+		{
+			if (y >= camY and y <= camY+camH)
+			{
+				arrowY = y;
+			}
+			else if (y > camY)
+			{
+				arrowY = camY+camH;
+			}
+			else
+			{
+				arrowY = camY;
+			}
+		
+			if (x >= camX and x <= camX+camW)
+			{
+				arrowX = x;
+			}
+			else if (x > camX)
+			{
+				arrowX = camX+camW;
+			}
+			else
+			{
+				arrowX = camX;
+			}
+		
+			draw_sprite_ext(argument0,0,arrowX,arrowY,1,1,
+			point_direction(oPlayer.x, oPlayer.y, x,y),c_white,1);
+		}
+
+	}
 }

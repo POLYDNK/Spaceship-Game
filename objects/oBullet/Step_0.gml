@@ -41,16 +41,20 @@ if (place_meeting(x,y,pShootable))
 	{
 		var snBulletImact = choose(snHitSolid1, snHitSolid2, snHitSolid3);
 	
+		// Sound
 		audio_sound_pitch(snBulletImact, hit_pitch);
 		//audio_play_sound(snBulletImact, 0, 0);
 		audio_play_sound_at(snBulletImact, x, y, 0, 500, 3000, 1, false, 0);
 	
+		// Effects
 		with (instance_create_layer(x, y, layer, pSparkBurst))
 		{
 			minDirection = other.direction - 25;
 			maxDirection = other.direction + 25;
 			sprite = other.particleSprite;
 		}
+		ApplyScreenshake(0.8, 1, 30);
+		instance_create_layer(x, y, layer, pTinyDebris);
 	
 		with (instance_create_layer(x, y, "Text", oDisplayDamage))
 		{

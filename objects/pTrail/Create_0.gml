@@ -3,7 +3,7 @@
 // Define Particle
 myParticle = part_type_create();
 part_type_life(myParticle, 3, 5);
-part_type_sprite(myParticle, sDust, true, true, false);
+part_type_sprite(myParticle, sprite, true, true, false);
 part_type_scale(myParticle, choose(1, -1), choose(1, -1));
 part_type_color1(myParticle, color);
 part_type_blend(myParticle, false);

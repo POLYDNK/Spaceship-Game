@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "SpaceshipGameStreamlined",
-    "path": "SpaceshipGameStreamlined.yyp",
+    "name": "RoomEditor",
+    "path": "folders/Sprites/Other/RoomEditor.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

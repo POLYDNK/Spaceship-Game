@@ -53,6 +53,7 @@
         "GMObject",
         "GMRoom",
       ],"listItems":null,"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"$FFFFFFFF","varType":7,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sDust","varType":5,},
   ],
   "solid": false,
   "spriteId": null,

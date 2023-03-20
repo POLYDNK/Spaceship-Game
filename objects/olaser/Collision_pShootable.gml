@@ -28,6 +28,9 @@ if (validTargetFound == true)
 		sprite = other.particleSprite;
 	}
 	
+	ApplyScreenshake(0.8, 1, 30);
+	instance_create_layer(other.x, other.y, layer, pTinyDebris);
+	
 	with (instance_create_layer(other.x, other.y, "Text", oDisplayDamage))
 	{
 	damageToDisplay = other.damage;

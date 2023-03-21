@@ -10,6 +10,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"propertyId":{"name":"ship_name","path":"objects/oPlayer/oPlayer.yy",},"value":"Blue Ship",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"maxSpeed","path":"objects/oShip/oShip.yy",},"value":"4",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"hp","path":"objects/pShootable/pShootable.yy",},"value":"50.00",},
   ],
   "parent": {
     "name": "PlayerShips",

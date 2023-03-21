@@ -8,7 +8,7 @@ if (drawHealth)
 	// Draw Health Bar
 	var healthbarX = x - (52/2);
 	var healthbarY = y - 50;
-	DrawHealthBar(healthbarColor, healthbarX, healthbarY); // Requires Variables
+	DrawHealthBar(healthbarColor, healthbarX, healthbarY, hp, hpMax); // Requires Variables
 }
 
 // Flash When Hit

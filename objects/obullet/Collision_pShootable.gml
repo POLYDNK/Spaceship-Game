@@ -7,26 +7,19 @@ with (other)
 {
 	if (destructable) and (team != other.shooterTeam)
 	{
-		if (object_index == oShip)
-		{
-			// Set shield recharge delay
-			shieldRechargeTimer = shieldRechargeTime;
+		// Set shield recharge delay
+		shieldRechargeTimer = shieldRechargeTime;
 			
-			// Deal shield damage first
-			shieldHP -= other.damage;
+		// Deal shield damage first
+		shieldHP -= other.damage;
 		
-			// Carry over remainder to hp reduction
-			if (shieldHP < 0)
-			{
-				hp += shieldHP;
-				shieldHP = 0
-			}
-		}
-		else
+		// Carry over remainder to hp reduction
+		if (shieldHP < 0)
 		{
-			hp -= other.damage;
+			hp += shieldHP;
+			shieldHP = 0
 		}
-		
+
 		flash = 3;
 		hitfrom = other.direction;
 		other.validTargetFound = true;
@@ -43,8 +36,10 @@ if (validTargetFound == true)
 	audio_play_sound_at(snBulletImact, x, y, 0, 500, 3000, 1, false, 0);
 	
 	// Particles
-	with (instance_create_layer(other.x, other.y, layer, pSparkBurst))
+	with (instance_create_layer(x, y, layer, pSparkBurst))
 	{
+		minDirection = other.direction - 25;
+		maxDirection = other.direction + 25;
 		sprite = other.particleSprite;
 	}
 	instance_create_layer(other.x, other.y, layer, pTinyDebris);
@@ -54,4 +49,10 @@ if (validTargetFound == true)
 	
 	// Damage Numbers
 	DrawDamage(damage, x, y);
+	
+	// Piercing
+	if (!piercing)
+	{
+		instance_destroy();
+	}
 }

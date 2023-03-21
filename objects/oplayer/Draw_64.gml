@@ -32,7 +32,25 @@ draw_rectangle_color(healthbarX, healthbarY,
                      healthbarX+healthbarWidth, healthbarY+healthbarHeight,
 					 healthbarColor,healthbarColor,healthbarColor,healthbarColor,
 					 true);
-
 DrawSetText(c_white,fSign,fa_center,fa_middle);
 draw_set_font(fHealth);
 draw_text(healthbarX+(healthbarWidth/2),healthbarY+(healthbarHeight/2),string(hp) + " / " + string(hpMax));
+
+// Draw Shield Health Bar
+var shieldBarY = healthbarY - healthbarHeight;
+draw_sprite(sHealthBack, 0, healthbarX, shieldBarY);
+draw_sprite_stretched_ext(sHealthHP,
+	                          currentFrame,
+							  healthbarX,
+							  shieldBarY,
+							  min((shieldHP/shieldHPMax) * healthbarWidth, healthbarWidth),
+							  healthbarHeight,
+							  shieldHPColor,
+							  1);
+draw_rectangle_color(healthbarX, shieldBarY, 
+                     healthbarX+healthbarWidth, shieldBarY+healthbarHeight,
+					 shieldHPColor,shieldHPColor,shieldHPColor,shieldHPColor,
+					 true);
+DrawSetText(c_white,fSign,fa_center,fa_middle);
+draw_set_font(fHealth);
+draw_text(healthbarX+(healthbarWidth/2),shieldBarY+(healthbarHeight/2),string(shieldHP) + " / " + string(shieldHPMax));

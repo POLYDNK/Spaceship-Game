@@ -12,9 +12,12 @@ function DrawSetText(argument0, argument1, argument2, argument3) {
 }
 
 
-/// @desc DrawHealthBar(color) Draws a Health Bar Relative to the Object Position
+/// @desc DrawHealthBar(color, xPos, yPos) Draws a health bar of a specificed position and color
 /// @arg color - color of the health bar
-function DrawHealthBar(color, xPos, yPos) {
+/// @arg xPos  - x position to draw
+/// @arg yPos  - y position to draw
+
+function DrawHealthBar(color, xPos, yPos, currentHP, maxHP) {
 	
 	var healthbarWidth = 52;
 	var healthbarHeight = 6;
@@ -25,7 +28,7 @@ function DrawHealthBar(color, xPos, yPos) {
 							  0,
 							  xPos,
 							  yPos,
-							  min((hp/hpMax) * healthbarWidth, healthbarWidth),
+							  min((currentHP/maxHP) * healthbarWidth, healthbarWidth),
 							  healthbarHeight,
 							  color,
 							  1);
@@ -119,6 +122,40 @@ function DrawSpriteWhenOffscreen(argument0 = sRedArrow){
 			draw_sprite_ext(argument0,0,arrowX,arrowY,1,1,
 			point_direction(oPlayer.x, oPlayer.y, x,y),c_white,1);
 		}
+	}
+}
 
+/// @desc DrawDamage(damage, xPos, yPos) Draws a damage number onto the screen
+/// @arg damage - amount of damage to be drawn
+/// @arg xPos  - x position to display
+/// @arg yPos  - y position to display
+function DrawDamage(damage, xPos, yPos)
+{
+	with (instance_create_layer(xPos, yPos, "Text", oDisplayDamage))
+	{
+		damageToDisplay = other.damage;
+		
+		#region Set Damage Text Display and Color
+		if (damageToDisplay > 1000)
+		{
+			damageColor = c_maroon;
+			damageFont = fDamage18;
+		}
+		else if (damageToDisplay > 100)
+		{
+			damageColor = c_red;
+			damageFont = fDamage16;
+		}
+		else if (damageToDisplay > 10)
+		{
+			damageColor = c_orange;
+			damageFont = fDamage14;
+		}
+		else if (damageToDisplay > 1)
+		{
+			damageColor = c_yellow;
+			damageFont = fDamage12;
+		}
+		#endregion
 	}
 }

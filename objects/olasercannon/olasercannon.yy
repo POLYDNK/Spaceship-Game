@@ -14,6 +14,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"movementFollow","path":"objects/oGun/oGun.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"projectileDamage","path":"objects/oGun/oGun.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"gunSound","path":"objects/oGun/oGun.yy",},"value":"snLaserCannon",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"chargeBuildUp","path":"objects/oGun/oGun.yy",},"value":"True",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"chargeBuildUpEffect","path":"objects/oGun/oGun.yy",},"value":"oLaserCharge",},
   ],
   "parent": {
     "name": "Weapons",

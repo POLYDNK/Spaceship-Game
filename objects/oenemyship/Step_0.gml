@@ -1,4 +1,4 @@
-/// @desc Attack Current Target
+/// @desc Perform action based on current decision state
 
 // Common Vars
 var ang = 0;

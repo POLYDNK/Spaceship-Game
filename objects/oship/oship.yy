@@ -13,6 +13,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"mass","path":"objects/pShootable/pShootable.yy",},"value":"300",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"shieldHPMax","path":"objects/pShootable/pShootable.yy",},"value":"10.00",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"shieldHP","path":"objects/pShootable/pShootable.yy",},"value":"10.00",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"healthbarColor","path":"objects/pShootable/pShootable.yy",},"value":"$FF0000FF",},
   ],
   "parent": {
     "name": "Ships",

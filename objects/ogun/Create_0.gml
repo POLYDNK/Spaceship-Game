@@ -2,6 +2,8 @@
 
 firingdelay = 0;     // store firing delay
 firing = false;
+charging = false;
+chargeInit = false;
 isSetup = false;     // ensure weapon is properly setup before drawing
 
 targetCurrent = noone; // current target

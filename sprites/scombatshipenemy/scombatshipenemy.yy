@@ -14,6 +14,9 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f9fa6106-a303-456f-ae5d-07ee62be8ddd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"942b46b3-4f88-4f08-9c65-6227f9a727e1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"471ef330-1a7d-4b0c-ab69-175830d3af72",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"52b4f162-1978-4eba-87a7-fe29a6ad8316",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,11 +46,11 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -55,6 +58,9 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f9fa6106-a303-456f-ae5d-07ee62be8ddd","path":"sprites/sCombatShipEnemy/sCombatShipEnemy.yy",},},},"Disabled":false,"id":"b80bd61d-665c-4087-b288-f0c8fe60dcd5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"942b46b3-4f88-4f08-9c65-6227f9a727e1","path":"sprites/sCombatShipEnemy/sCombatShipEnemy.yy",},},},"Disabled":false,"id":"24614b4f-d78e-4369-9f55-8b02ff69f47f","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"471ef330-1a7d-4b0c-ab69-175830d3af72","path":"sprites/sCombatShipEnemy/sCombatShipEnemy.yy",},},},"Disabled":false,"id":"1b217d00-9cd3-41a7-8edf-1b1eb6a34dbb","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"52b4f162-1978-4eba-87a7-fe29a6ad8316","path":"sprites/sCombatShipEnemy/sCombatShipEnemy.yy",},},},"Disabled":false,"id":"e618325e-8235-4bf5-b212-1339fc814239","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

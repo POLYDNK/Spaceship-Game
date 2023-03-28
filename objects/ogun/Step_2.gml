@@ -2,6 +2,13 @@
 
 if (instance_exists(wielder))
 {
+	if (!chargeInit && chargeBuildUpEffect != noone)
+	{
+		instance_create_layer(x,y,"Instances",chargeBuildUpEffect);
+		chargeBuildUpEffect.shooter = self;
+		chargeInit = true;
+	}
+	
 	// Stay with Wielder
 	image_angle = wielder.image_angle;
 							 
@@ -22,7 +29,6 @@ if (instance_exists(wielder))
 	// Adjust x scale
 	image_xscale = gunScale;
 	
-	firingdelay--;  // Decrement Firing Delay
 	
 	#region Firing Control
 	
@@ -43,11 +49,25 @@ if (instance_exists(wielder))
 		}
 	}
 	
+	if (chargeBuildUp && !firing)
+	{
+		// Reset charge
+		firingdelay = firerate;
+		charging = false;
+	}
+	else
+	{
+		firingdelay--;  // Decrement Firing Delay
+		charging = true;
+	}
+	
 	#endregion
 
 	if (firing == true) && (firingdelay < 0) && (canShoot)
 	{
 		#region Do This when Gun Fires  
+		
+		charging = false;
 		
 		// Animation
 		if (recoilAnimation)
@@ -55,9 +75,6 @@ if (instance_exists(wielder))
 			image_index = recoilStartFrame;
 			image_speed = 1;
 		}
-			
-		// Calculate dispersion
-		bulletDirection = image_angle + random_range(-dispersion,dispersion);
 			
 		// Set # of Frames Gun Cannot be Fired
 		firingdelay = firerate;
@@ -70,17 +87,24 @@ if (instance_exists(wielder))
 		var muzzleOffsetX = muzzleOffset * dcos(image_angle); 
 		var muzzleOffsetY = muzzleOffset * dsin(image_angle); 
 		
-		// Create Bullet
-		with (instance_create_layer(x+muzzleOffsetX,
-			                        y-muzzleOffsetY,
-									"Instances", bulletType))
+		// Calculate dispersion
+		repeat (projectileCount)
 		{
-			shooter     = other;
-			damage      = other.projectileDamage;
-			direction   = other.bulletDirection;
-			image_angle = direction;			
-			hsp         = lengthdir_x(other.projectileSpeed, direction) + (other.wielder.hsp * 0.8);
-			vsp         = lengthdir_y(other.projectileSpeed, direction) + (other.wielder.vsp * 0.8);
+			bulletDirection = image_angle + random_range(-dispersion,dispersion);
+		
+			// Create Bullet
+			with (instance_create_layer(x+muzzleOffsetX,
+				                        y-muzzleOffsetY,
+										"Instances", bulletType))
+			{
+				shooterTeam = other.wielder.team;
+				shooter     = other;
+				damage      = other.projectileDamage;
+				direction   = other.bulletDirection;
+				image_angle = direction;			
+				hsp         = lengthdir_x(other.projectileSpeed, direction) + (other.wielder.hsp * 0.8);
+				vsp         = lengthdir_y(other.projectileSpeed, direction) + (other.wielder.vsp * 0.8);
+			}
 		}
 
 		#endregion

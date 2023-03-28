@@ -2,6 +2,34 @@
 
 image_blend = shipColor;
 
+// Flash When Hit
+if (flash > 0 ) && (destructable == true)
+{	
+	flash--;
+	shader_set(shWhite);
+	draw_self();
+	shader_reset();
+}
+else
+{
+	draw_self();
+}
+
+
+// Damage layers
+if (hp/hpMax < 0.15)
+{
+	draw_sprite_ext(sprite_index, 3, x, y, image_xscale, image_yscale, image_angle, shipColor, 0.6);
+}
+else if (hp/hpMax < 0.3)
+{
+	draw_sprite_ext(sprite_index, 2, x, y, image_xscale, image_yscale, image_angle, shipColor, 0.5);
+}
+else if (hp/hpMax < 0.6)
+{
+	draw_sprite_ext(sprite_index, 1, x, y, image_xscale, image_yscale, image_angle, shipColor, 0.4);	
+}
+
 // Draw HP Bar
 if (drawHealth)
 {
@@ -16,22 +44,4 @@ if (drawHealth)
 		var healthbarY = y - 56;
 		DrawHealthBar(shieldHPColor, healthbarX, healthbarY, shieldHP, shieldHPMax); // Requires Variables
 	}
-}
-
-
-// Flash When Hit
-if (flash > 0 ) && (destructable == true)
-{	
-	flash--;
-	shader_set(shWhite);
-	draw_self();
-	shader_reset();
-}
-else
-{
-	var damageShader = shader_get_sampler_index(shDamage, "DamageTexture");
-	texture_set_stage(damageShader, sprite_get_texture(sDamageTexture, 0));
-	shader_set(shDamage);
-	draw_self();
-	shader_reset();
 }

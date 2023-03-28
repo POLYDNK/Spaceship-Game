@@ -4,7 +4,7 @@ destination = ds_map_find_value(global.gate_map, id);
 
 // Shuffle Away from other warp gates
 cObj = collision_circle(x, y, 1000, oWarpGate, false ,true);
-while (cObj != noone)
+for (var i = 0; i < 100 && cObj != noone; i++)
 {
 	// Move away from other warp gate
 	var ang = point_direction(x, y, cObj.x, cObj.y);

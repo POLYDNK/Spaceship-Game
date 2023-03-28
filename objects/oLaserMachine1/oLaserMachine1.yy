@@ -6,6 +6,9 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"projectileDamage","path":"objects/oGun/oGun.yy",},"value":"2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"firerate","path":"objects/oGun/oGun.yy",},"value":"5",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"projectileCount","path":"objects/oGun/oGun.yy",},"value":"3",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"dispersion","path":"objects/oGun/oGun.yy",},"value":"2",},
   ],
   "parent": {
     "name": "Weapons",

@@ -7,26 +7,19 @@ with (other)
 {
 	if (destructable) and (team != other.shooterTeam)
 	{
-		if (object_index == oShip)
-		{
-			// Set shield recharge delay
-			shieldRechargeTimer = shieldRechargeTime;
+		// Set shield recharge delay
+		shieldRechargeTimer = shieldRechargeTime;
 			
-			// Deal shield damage first
-			shieldHP -= other.damage;
+		// Deal shield damage first
+		shieldHP -= other.damage;
 		
-			// Carry over remainder to hp reduction
-			if (shieldHP < 0)
-			{
-				hp += shieldHP;
-				shieldHP = 0
-			}
-		}
-		else
+		// Carry over remainder to hp reduction
+		if (shieldHP < 0)
 		{
-			hp -= other.damage;
+			hp += shieldHP;
+			shieldHP = 0
 		}
-		
+
 		flash = 3;
 		hitfrom = other.direction;
 		other.validTargetFound = true;
@@ -53,5 +46,5 @@ if (validTargetFound == true)
 	ApplyScreenshake(0.8, 1, 30);
 	
 	// Damage Numbers
-	DrawDamage(damage, x, y);
+	DrawDamage(damage, other.x, other,y);
 }

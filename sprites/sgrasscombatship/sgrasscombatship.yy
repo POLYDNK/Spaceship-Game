@@ -14,6 +14,9 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9b03d253-017c-419b-8bc2-7c4d358a2c6a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"94ed61a4-01fe-4f4c-916c-5c7f39f1d8b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0b317fb8-eb48-4226-8fd4-99fcb8468849",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"b9b5f756-8e98-419f-a9e1-6a3560c92433",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,11 +46,11 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -55,6 +58,9 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9b03d253-017c-419b-8bc2-7c4d358a2c6a","path":"sprites/sGrassCombatShip/sGrassCombatShip.yy",},},},"Disabled":false,"id":"b2451f00-36ff-4631-80db-079b36db1812","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"94ed61a4-01fe-4f4c-916c-5c7f39f1d8b2","path":"sprites/sGrassCombatShip/sGrassCombatShip.yy",},},},"Disabled":false,"id":"0577cb75-b87b-479b-88ff-1082978be15d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0b317fb8-eb48-4226-8fd4-99fcb8468849","path":"sprites/sGrassCombatShip/sGrassCombatShip.yy",},},},"Disabled":false,"id":"07c4b8fb-a777-4c31-81e9-7afcf2b8e470","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"b9b5f756-8e98-419f-a9e1-6a3560c92433","path":"sprites/sGrassCombatShip/sGrassCombatShip.yy",},},},"Disabled":false,"id":"5a3fcbf7-4435-493b-8673-48886462ea6b","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

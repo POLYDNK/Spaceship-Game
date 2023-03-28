@@ -1,4 +1,4 @@
-/// @desc Move if hascontrol
+/// @desc Move if ship has control
 
 // Inherit the parent event
 if (hascontrol)

@@ -58,7 +58,7 @@
         "GMObject",
         "GMRoom",
       ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"$FF0015FF","varType":7,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"transparency","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.8","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"transparency","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"particleSprite","filters":[
         "GMTileSet",
         "GMSprite",

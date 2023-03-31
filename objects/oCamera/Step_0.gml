@@ -3,8 +3,8 @@
 // Update Destination
 if (instance_exists(follow))
 {
-	xTo = follow.x;
-	yTo = follow.y;
+	xTo = follow.x + follow.hsp*2;
+	yTo = follow.y + follow.vsp*2;
 }
 
 // Update Camera Position

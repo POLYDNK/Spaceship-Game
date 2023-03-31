@@ -7,14 +7,10 @@ if (flash > 0 ) && (destructable == true)
 {	
 	flash--;
 	shader_set(shWhite);
-	draw_self();
-	shader_reset();
-}
-else
-{
-	draw_self();
 }
 
+// Draw ship
+draw_self();
 
 // Damage layers
 if (hp/hpMax < 0.15)
@@ -29,6 +25,8 @@ else if (hp/hpMax < 0.6)
 {
 	draw_sprite_ext(sprite_index, 1, x, y, image_xscale, image_yscale, image_angle, shipColor, 0.4);	
 }
+
+shader_reset();
 
 // Draw HP Bar
 if (drawHealth)

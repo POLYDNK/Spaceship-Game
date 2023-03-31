@@ -8,11 +8,11 @@
   "option_operagx_guid": "335032db-debc-43ff-a2f6-f008da3b1704",
   "option_operagx_internalShareUrl": "https://gx.games/games/o99dno/spaceship-game/tracks/21f2f84d-3988-4e0a-98ac-42e062dc2075/",
   "option_operagx_interpolate_pixels": true,
-  "option_operagx_next_version": "1.0.0.2",
+  "option_operagx_next_version": "1.0.0.4",
   "option_operagx_publicShareUrl": "",
   "option_operagx_scale": 0,
   "option_operagx_team_id": "80deda88-2a47-4f0c-92df-9cb7886424cf",
   "option_operagx_team_name": "POLYDANK studio",
   "option_operagx_texture_page": "2048x2048",
-  "option_operagx_version": "1.0.0.1",
+  "option_operagx_version": "1.0.0.3",
 }

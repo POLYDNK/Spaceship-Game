@@ -18,17 +18,11 @@ if (instance_exists(wielder))
 	x = wielder.x + lengthdir_x(dist, ang);
 	y = wielder.y + lengthdir_y(dist, ang);
 	
-	// Movement Follow (Some guns tend to drift away from the player ship,
-	// and I have no idea why. So, this option addresses the sympton of it.)
-	if (movementFollow)
-	{
-		x += wielder.hsp;
-		y += wielder.vsp;
-	}
-	
-	// Adjust x scale
+	// Update x scale
 	image_xscale = gunScale;
 	
+	// Update audio emitter position
+	audio_emitter_position(myAudioEmitter, x, y, 0);
 	
 	#region Firing Control
 	
@@ -62,10 +56,17 @@ if (instance_exists(wielder))
 	}
 	
 	#endregion
-
-	if (firing == true) && (firingdelay < 0) && (canShoot)
+	
+	// Reload sound
+	if (firingdelay == 0) && (reloadSound != noone)
 	{
-		#region Do This when Gun Fires  
+		audio_play_sound_on(myAudioEmitter, reloadSound, false, 1);
+	}
+
+	#region Firing
+	if (firing == true) && (firingdelay <= 0) && (canShoot)
+	{
+		
 		
 		charging = false;
 		
@@ -80,7 +81,6 @@ if (instance_exists(wielder))
 		firingdelay = firerate;
 
 		// Play Sound
-		audio_emitter_position(myAudioEmitter, x, y, 0);
 		audio_play_sound_on(myAudioEmitter, gunSound, false, 1);
 		
 		// Calculate Muzzle Offset
@@ -106,9 +106,8 @@ if (instance_exists(wielder))
 				vsp         = lengthdir_y(other.projectileSpeed, direction) + (other.wielder.vsp * 0.8);
 			}
 		}
-
-		#endregion
 	}
+	#endregion
 }
 else
 {

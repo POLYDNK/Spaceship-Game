@@ -1,4 +1,4 @@
-/// @desc Cleanup
+/// @desc Free particle types
 
 part_type_destroy(tinyRocks[4]);
 part_type_destroy(tinyRocks[3]);

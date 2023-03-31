@@ -1,4 +1,4 @@
-/// @desc Cleanup
+/// @desc Free particle components
 
 part_emitter_destroy(mySystem, flameEmitter);
 part_emitter_destroy(mySystem, sparkEmitter);

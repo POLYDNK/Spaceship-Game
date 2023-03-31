@@ -5,13 +5,13 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"hp","path":"objects/pShootable/pShootable.yy",},"value":"50",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"hp","path":"objects/pShootable/pShootable.yy",},"value":"200",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"mass","path":"objects/pShootable/pShootable.yy",},"value":"100",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"shipColor","path":"objects/oShip/oShip.yy",},"value":"$FF7575FF",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"maxSpeed","path":"objects/oShip/oShip.yy",},"value":"5",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"acceleration","path":"objects/oShip/oShip.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"horizontalPenalty","path":"objects/oShip/oShip.yy",},"value":"0.2",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemyShip","path":"objects/oEnemyShip/oEnemyShip.yy",},"propertyId":{"name":"weapon","path":"objects/oEnemyShip/oEnemyShip.yy",},"value":"oLaserCannonNPC",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemyShip","path":"objects/oEnemyShip/oEnemyShip.yy",},"propertyId":{"name":"weapon","path":"objects/oEnemyShip/oEnemyShip.yy",},"value":"oLaserMachineNPC",},
   ],
   "parent": {
     "name": "EnemyShips",

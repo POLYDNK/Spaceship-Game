@@ -16,6 +16,7 @@ audio_listener_set_orientation(0, 1, 0, 0, 0, 1, 0);
 enum AI
 {
 	IDLE,
+	STOP,
 	CHASE,
 	RETREAT,
 	LOOK,

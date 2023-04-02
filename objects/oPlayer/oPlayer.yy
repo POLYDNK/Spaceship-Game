@@ -21,6 +21,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"team","path":"objects/pShootable/pShootable.yy",},"value":"TEAM.FRIENDLY",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"mass","path":"objects/pShootable/pShootable.yy",},"value":"50",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"horizontalPenalty","path":"objects/oShip/oShip.yy",},"value":"0.2",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pCollider","path":"objects/pCollider/pCollider.yy",},"propertyId":{"name":"autoMove","path":"objects/pCollider/pCollider.yy",},"value":"False",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pShootable","path":"objects/pShootable/pShootable.yy",},"propertyId":{"name":"shieldRechargeTime","path":"objects/pShootable/pShootable.yy",},"value":"2 * 60",},
   ],
   "parent": {
     "name": "Ships",

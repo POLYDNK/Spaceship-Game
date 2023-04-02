@@ -9,7 +9,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"laserDistance","path":"objects/oLaser/oLaser.yy",},"value":"150",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"duration","path":"objects/oLaser/oLaser.yy",},"value":"2",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"laserColor","path":"objects/oLaser/oLaser.yy",},"value":"$FF0015FF",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"color","path":"objects/oLaser/oLaser.yy",},"value":"$FF0015FF",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"transparency","path":"objects/oLaser/oLaser.yy",},"value":"0.2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"damage","path":"objects/oLaser/oLaser.yy",},"value":"1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLaser","path":"objects/oLaser/oLaser.yy",},"propertyId":{"name":"laserWidth","path":"objects/oLaser/oLaser.yy",},"value":"75",},

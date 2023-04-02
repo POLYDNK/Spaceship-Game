@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "BackgroundStars",
-    "path": "folders/Sprites/BackgroundStars.yy",
+    "name": "BackDrops",
+    "path": "folders/Sprites/BackDrops.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

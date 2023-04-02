@@ -5,7 +5,7 @@
   "eventList": [],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"bulletType","path":"objects/oGun/oGun.yy",},"value":"oBulletWaveEnemy",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"bulletType","path":"objects/oGun/oGun.yy",},"value":"oBulletEnemy",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"gunSound","path":"objects/oGun/oGun.yy",},"value":"snLaser",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"targetType","path":"objects/oGun/oGun.yy",},"value":"TEAM.FRIENDLY",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"firerate","path":"objects/oGun/oGun.yy",},"value":"30",},

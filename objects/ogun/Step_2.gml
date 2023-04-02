@@ -47,13 +47,13 @@ if (instance_exists(wielder))
 	{
 		// Reset charge
 		firingdelay = firerate;
-		charging = false;
 	}
-	else
+	else if (!global.pause)
 	{
 		firingdelay--;  // Decrement Firing Delay
-		charging = true;
 	}
+	
+	charging = (firingdelay > 0);
 	
 	#endregion
 	
@@ -65,11 +65,7 @@ if (instance_exists(wielder))
 
 	#region Firing
 	if (firing == true) && (firingdelay <= 0) && (canShoot)
-	{
-		
-		
-		charging = false;
-		
+	{	
 		// Animation
 		if (recoilAnimation)
 		{
@@ -100,6 +96,7 @@ if (instance_exists(wielder))
 				shooterTeam = other.wielder.team;
 				shooter     = other;
 				damage      = other.projectileDamage;
+				color		= other.projectileColor;
 				direction   = other.bulletDirection;
 				image_angle = direction;			
 				hsp         = lengthdir_x(other.projectileSpeed, direction) + (other.wielder.hsp * 0.8);

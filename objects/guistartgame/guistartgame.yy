@@ -3,11 +3,12 @@
   "resourceVersion": "1.0",
   "name": "guiStartGame",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"guiButton","path":"objects/guiButton/guiButton.yy",},"propertyId":{"name":"text","path":"objects/guiButton/guiButton.yy",},"value":"Start Game",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"guiButton","path":"objects/guiButton/guiButton.yy",},"propertyId":{"name":"width","path":"objects/guiButton/guiButton.yy",},"value":"300",},
   ],
   "parent": {
     "name": "MainMenu",
@@ -32,7 +33,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sBlankButton",
+    "path": "sprites/sBlankButton/sBlankButton.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

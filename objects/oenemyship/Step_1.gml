@@ -9,7 +9,7 @@ currentTarget = FindNearestTarget(TEAM.FRIENDLY);
 if (currentTarget != noone)
 {
 	var dist = distance_to_object(oPlayer); // Distance to target
-		
+	
 	if (dist <= aggroRange)
 	{
 		if (hp < (hpMax*0.25))

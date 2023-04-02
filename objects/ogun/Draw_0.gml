@@ -14,5 +14,6 @@ if (isSetup == true)
 		}
 		
 		image_index = floor(chargedEndFrame * chargePercent);
+		
 	}
 }

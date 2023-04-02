@@ -152,6 +152,10 @@ if (currentSpeed > new_max_speed)
     hsp *= ratio;
     vsp *= ratio;
 }
+
+x += hsp;
+y += vsp;
+
 #endregion
 
 #region Effects

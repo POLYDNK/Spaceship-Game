@@ -45,6 +45,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"strafeRange","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"600","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"debugDrawState","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"","varType":2,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"weapon","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oLaserMachineNPC","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"weaponOffsetX","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"weaponOffsetY","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
   "spriteId": {

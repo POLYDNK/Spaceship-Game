@@ -1,5 +1,6 @@
 // Enemy Ship Spawning
 global.enemy_ship_spawn = new SpawnArray(new Spawn(oEnemyGrassCombat, 20));
+global.enemy_ship_spawn.AddSpawn(new Spawn(oEnemyAquaFreight, 40));
 global.enemy_ship_spawn.AddSpawn(new Spawn(oEnemyCombatShip, 40));
 
 // Asteroid Spawning

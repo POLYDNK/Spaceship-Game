@@ -7,7 +7,8 @@ hsp = 0; // Horizontal Speed
 // Audio
 myAudioEmitter = audio_emitter_create();
 audio_emitter_gain(myAudioEmitter, 0.5);
-audio_emitter_falloff(myAudioEmitter, 500, 3000, 1);
+audio_falloff_set_model(audio_falloff_linear_distance);
+audio_emitter_falloff(myAudioEmitter, 1000, 5000, 1);
 audio_emitter_position(myAudioEmitter, x, y, 0);
 
 explosionSound = choose(snExplosion1, snExplosion2);

@@ -8,7 +8,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"chargedEndFrame","path":"objects/oGun/oGun.yy",},"value":"11",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"recoilStartFrame","path":"objects/oGun/oGun.yy",},"value":"12",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"chargeAnimation","path":"objects/oGun/oGun.yy",},"value":"True",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"firerate","path":"objects/oGun/oGun.yy",},"value":"64",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"firerate","path":"objects/oGun/oGun.yy",},"value":"150",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"bulletType","path":"objects/oGun/oGun.yy",},"value":"oLaser",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"muzzleOffset","path":"objects/oGun/oGun.yy",},"value":"367",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"movementFollow","path":"objects/oGun/oGun.yy",},"value":"True",},
@@ -19,6 +19,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"targetType","path":"objects/oGun/oGun.yy",},"value":"TEAM.FRIENDLY",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"playerControlled","path":"objects/oGun/oGun.yy",},"value":"False",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oModule","path":"objects/oModule/oModule.yy",},"propertyId":{"name":"wielder","path":"objects/oModule/oModule.yy",},"value":"oEnemyShip",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"projectileColor","path":"objects/oGun/oGun.yy",},"value":"$FFFFDC00",},
   ],
   "parent": {
     "name": "Weapons",

@@ -17,6 +17,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"chargeBuildUp","path":"objects/oGun/oGun.yy",},"value":"False",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"chargeBuildUpEffect","path":"objects/oGun/oGun.yy",},"value":"noone",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"reloadSound","path":"objects/oGun/oGun.yy",},"value":"snLaserReload",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oGun","path":"objects/oGun/oGun.yy",},"propertyId":{"name":"projectileColor","path":"objects/oGun/oGun.yy",},"value":"$FF0000FF",},
   ],
   "parent": {
     "name": "Weapons",

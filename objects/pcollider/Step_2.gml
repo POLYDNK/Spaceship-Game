@@ -14,8 +14,12 @@ if (place_meeting(x + hsp, y + vsp, pCollider) == false)
 		vsp = lengthdir_y(orbitSpeed, ang);
 	}
 
-	x += hsp;
-	y += vsp;
+	// Used to fix modules on the player ship from drifting away
+	if (autoMove)
+	{
+		x += hsp;
+		y += vsp;
+	}
 }
 else
 {
@@ -40,12 +44,12 @@ else
 	var m2 = cObj.mass;
 	
 	
+	/*
 	var A = m1 + m2;
 	var B = m1 - m2;
 	var C = 2 * m2;
 	var D = 2 * m1;
-
-	/*
+	
 	hsp = ((B / A) * v1x) + ((C / A) * v2x) * 0.5;
 	cObj.hsp = ((D / A) * v1x) - ((B / A) * v2x);
 	

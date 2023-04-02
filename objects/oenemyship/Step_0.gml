@@ -33,6 +33,15 @@ if (instance_exists(currentTarget))
 		case AI.IDLE:
 			debugDrawState = "idle";
 			break;
+			
+		// ----------------
+		// Stopping
+		// ----------------
+		case AI.STOP:
+			hsp /= 2;
+			vsp /= 2;
+			debugDrawState = "stop";
+			break;
 	
 		// ----------------
 		// Looking towards target

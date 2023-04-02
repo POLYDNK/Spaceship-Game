@@ -1,15 +1,35 @@
 /// @desc Draw Button
 
-draw_sprite_stretched(sButton, 0, xPos, yPos, width, height);
+// Determine Draw Color
+var dColor = c_white;
 
-if (holding == false)
+if (holding)
 {
-	draw_rectangle_color(xPos, yPos, xPos+width, yPos+height, c_white, c_white, c_white, c_white, true);
+	dColor = holdingColor;
 }
-else
+else if (mouseInBounds)
 {
-	draw_rectangle_color(xPos, yPos, xPos+width, yPos+height, c_orange, c_orange, c_orange, c_orange, true);
+	dColor = hoverColor;
 }
 
-DrawSetText(c_white, fMenu, fa_center, fa_middle);
+// Draw Sprites
+
+// Outline drawing (needless shader complexity)
+if (holding or mouseInBounds)
+{
+	shader_set(shColor);
+	colorArray = [color_get_red(dColor) / 255.0,
+				  color_get_green(dColor) / 255.0,
+				  color_get_blue(dColor) / 255.0];
+	shader_colors = shader_get_uniform(shColor, "v_rgbColor");
+	shader_set_uniform_f_array(shader_colors, colorArray);
+	draw_sprite_stretched(sBlankButton, 0, xPos-10, yPos-10, width+20, height+20);
+	shader_reset();
+}
+
+// Draw Button
+draw_sprite_stretched(sBlankButton, 0, xPos, yPos, width, height);
+
+// Draw Text
+DrawSetText(dColor, fMenu, fa_center, fa_middle);
 draw_text(xPos + width/2, yPos + height/2, text);

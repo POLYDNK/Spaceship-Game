@@ -12,6 +12,8 @@ if (weapon != noone)
 	with (instance_create_layer(x, y, "Modules", weapon))
 	{
 		wielder = other.id;
+		xOffset = other.weaponOffsetX;
+		yOffset = other.weaponOffsetY;
 	}
 }
 

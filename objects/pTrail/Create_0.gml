@@ -4,10 +4,11 @@
 myParticle = part_type_create();
 part_type_life(myParticle, 3, 5);
 part_type_sprite(myParticle, sprite, true, true, false);
-part_type_scale(myParticle, choose(1, -1), choose(1, -1));
+part_type_scale(myParticle, choose(scale, -scale), choose(scale, -scale));
 part_type_color1(myParticle, color);
 part_type_blend(myParticle, false);
 part_type_speed(myParticle, 0.5, 1, -0.1, 0);
+part_type_direction(myParticle, particleDirection, particleDirection, 0, 0);
 
 // Define Emitter
 myEmitter = part_emitter_create(global.particleSystem);

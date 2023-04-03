@@ -61,7 +61,8 @@
         "GMObject",
         "GMRoom",
       ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"$FFFFEE00","varType":7,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"particleSprite","filters":[
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"particleHitEffect","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"pSparkBurst","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"particleHitSprite","filters":[
         "GMTileSet",
         "GMSprite",
         "GMSound",

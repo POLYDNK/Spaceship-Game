@@ -58,7 +58,7 @@ if (instance_exists(wielder))
 	#endregion
 	
 	// Reload sound
-	if (firingdelay == 0) && (reloadSound != noone)
+	if (firingdelay == 0) && (reloadSound != noone) && (!global.pause)
 	{
 		audio_play_sound_on(myAudioEmitter, reloadSound, false, 1);
 	}

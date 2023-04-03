@@ -16,7 +16,7 @@ audio_emitter_pitch(myAudioEmitter, random_range(0.8,1.2));
 audio_play_sound_on(myAudioEmitter, explosionSound, false, 10, 1, 0.5);
 
 // Explosion Sequence
-myExplosionSq = layer_sequence_create("Instances", x, y, sqExplosion);
+myExplosionSq = layer_sequence_create("Items", x, y, sqExplosion);
 
 // Set camera follow if it's player
 if (isPlayer)

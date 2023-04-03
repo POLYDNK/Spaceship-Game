@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Timelines",
-    "path": "folders/Timelines.yy",
+    "name": "Sequences",
+    "path": "folders/Sequences.yy",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

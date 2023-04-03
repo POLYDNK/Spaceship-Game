@@ -10,7 +10,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":null,"value":"oPlayer",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"trailColor","path":"objects/oBullet/oBullet.yy",},"value":"$FF0000FF",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"shooterTeam","path":"objects/oBullet/oBullet.yy",},"value":"TEAM.ENEMY",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"particleSprite","path":"objects/oBullet/oBullet.yy",},"value":"sSpark",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"particleHitSprite","path":"objects/oBullet/oBullet.yy",},"value":"sSpark",},
   ],
   "parent": {
     "name": "Bullets",

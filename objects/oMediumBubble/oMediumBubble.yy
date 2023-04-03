@@ -2,20 +2,19 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oMediumBubble",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-  ],
+  "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShieldModule","path":"objects/oShieldModule/oShieldModule.yy",},"propertyId":{"name":"shieldStrength","path":"objects/oShieldModule/oShieldModule.yy",},"value":"40.00",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShieldModule","path":"objects/oShieldModule/oShieldModule.yy",},"propertyId":{"name":"cooldown","path":"objects/oShieldModule/oShieldModule.yy",},"value":"800",},
+  ],
   "parent": {
     "name": "Actives",
     "path": "folders/Objects/Modules/Actives.yy",
   },
   "parentObjectId": {
-    "name": "oModule",
-    "path": "objects/oModule/oModule.yy",
+    "name": "oShieldModule",
+    "path": "objects/oShieldModule/oShieldModule.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -30,13 +29,7 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"cooldown","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"500","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"activate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"False","varType":3,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"bubbleToCreate","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oShieldBubble","varType":5,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"keyboardKey","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"shieldStrength","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"40","varType":0,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
     "name": "sMediumBubble",

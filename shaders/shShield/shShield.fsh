@@ -12,5 +12,5 @@ void main()
     gl_FragColor = v_vColour * texture2D( gm_BaseTexture, v_vTexcoord );
 	
 	// Set fragment color to shield color, multiply the alpha by that of the texture
-	gl_FragColor = vec4(v_rgbColor.r, v_rgbColor.g, v_rgbColor.b, gl_FragColor.a * v_shieldColor.a);
+	gl_FragColor = vec4(v_shieldColor.r, v_shieldColor.g, v_shieldColor.b, gl_FragColor.a * v_shieldColor.a);
 }

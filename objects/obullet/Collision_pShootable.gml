@@ -36,11 +36,11 @@ if (validTargetFound == true)
 	audio_play_sound_at(snBulletImact, x, y, 0, 500, 3000, 1, false, 0);
 	
 	// Particles
-	with (instance_create_layer(x, y, layer, pSparkBurst))
+	with (instance_create_layer(x, y, layer, particleHitEffect))
 	{
 		minDirection = other.direction - 25;
 		maxDirection = other.direction + 25;
-		sprite = other.particleSprite;
+		sprite = other.particleHitSprite;
 	}
 	instance_create_layer(other.x, other.y, layer, pTinyDebris);
 	

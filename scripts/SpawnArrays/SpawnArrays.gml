@@ -1,7 +1,7 @@
 // Enemy Ship Spawning
 global.enemy_ship_spawn = new SpawnArray(new Spawn(oEnemyGrassCombat, 20));
-global.enemy_ship_spawn.AddSpawn(new Spawn(oEnemyAquaFreight, 40));
-global.enemy_ship_spawn.AddSpawn(new Spawn(oEnemyCombatShip, 40));
+global.enemy_ship_spawn.AddSpawn(new Spawn(oEnemyAquaFreight, 20));
+global.enemy_ship_spawn.AddSpawn(new Spawn(oEnemyCombatShip, 80));
 
 // Asteroid Spawning
 global.asteroid_spawn = new SpawnArray(new Spawn(asteroid_large, 10));
@@ -11,6 +11,8 @@ global.asteroid_spawn.AddSpawn(new Spawn(asteroid_small, 100));
 // Enemy Ship Loot
 global.enemy_ship_loot = new SpawnArray(new Spawn(oIron, 100));
 global.enemy_ship_loot.AddSpawn(new Spawn(oLaserCannonPickup, 20));
+global.enemy_ship_loot.AddSpawn(new Spawn(oAquaCannonPickup, 20));
+global.enemy_ship_loot.AddSpawn(new Spawn(oCrescentGunPickup, 20));
 global.enemy_ship_loot.AddSpawn(new Spawn(oMediumBubblePickup, 20));
 global.enemy_ship_loot.AddSpawn(new Spawn(oMediumEnginePickup, 20));
 global.enemy_ship_loot.AddSpawn(new Spawn(oSmallDrillPickup, 20));

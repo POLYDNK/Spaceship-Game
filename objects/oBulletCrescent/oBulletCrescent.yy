@@ -6,7 +6,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"bulletScale","path":"objects/oBullet/oBullet.yy",},"value":"0.3",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"particleSprite","path":"objects/oBullet/oBullet.yy",},"value":"sSparkGreen",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"particleHitSprite","path":"objects/oBullet/oBullet.yy",},"value":"sSparkGreen",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},"propertyId":{"name":"trailColor","path":"objects/oBullet/oBullet.yy",},"value":"$FF04FF00",},
   ],
   "parent": {

@@ -11,7 +11,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"maxSpeed","path":"objects/oShip/oShip.yy",},"value":"5",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"acceleration","path":"objects/oShip/oShip.yy",},"value":"2",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"horizontalPenalty","path":"objects/oShip/oShip.yy",},"value":"0.2",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemyShip","path":"objects/oEnemyShip/oEnemyShip.yy",},"propertyId":{"name":"weapon","path":"objects/oEnemyShip/oEnemyShip.yy",},"value":"oLaserCannonNPC",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemyShip","path":"objects/oEnemyShip/oEnemyShip.yy",},"propertyId":{"name":"weapon","path":"objects/oEnemyShip/oEnemyShip.yy",},"value":"oAquaCannonNPC",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oShip","path":"objects/oShip/oShip.yy",},"propertyId":{"name":"traverseSpeed","path":"objects/oShip/oShip.yy",},"value":"1",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oEnemyShip","path":"objects/oEnemyShip/oEnemyShip.yy",},"propertyId":{"name":"weaponOffsetX","path":"objects/oEnemyShip/oEnemyShip.yy",},"value":"100",},
   ],

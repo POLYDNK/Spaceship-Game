@@ -36,18 +36,6 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"shooterTeam","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"TEAM.FRIENDLY","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"shooter","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"noone","varType":5,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"damage","filters":[
-        "GMTileSet",
-        "GMSprite",
-        "GMSound",
-        "GMPath",
-        "GMScript",
-        "GMShader",
-        "GMFont",
-        "GMTimeLine",
-        "GMObject",
-        "GMRoom",
-      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"5","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"color","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"$FFFFFFFF","varType":7,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"trailColor","filters":[
         "GMTileSet",

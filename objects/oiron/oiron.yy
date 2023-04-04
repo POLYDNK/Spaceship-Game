@@ -6,6 +6,7 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPickup","path":"objects/oPickup/oPickup.yy",},"propertyId":{"name":"item_type","path":"objects/oPickup/oPickup.yy",},"value":"ITEM.IRON",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oPickup","path":"objects/oPickup/oPickup.yy",},"propertyId":{"name":"imageScale","path":"objects/oPickup/oPickup.yy",},"value":"2",},
   ],
   "parent": {
     "name": "Pickups",

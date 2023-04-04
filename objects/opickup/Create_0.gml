@@ -8,3 +8,7 @@ Y = 0;
 // Don't Animate
 image_index = 0;
 image_speed = 0;
+
+// Image scale
+image_xscale = imageScale;
+image_yscale = imageScale;

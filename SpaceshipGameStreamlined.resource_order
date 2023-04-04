@@ -144,6 +144,7 @@
     {"name":"spr_smp_moon_3","order":11,"path":"sprites/spr_smp_moon_3/spr_smp_moon_3.yy",},
     {"name":"oMars","order":3,"path":"objects/oMars/oMars.yy",},
     {"name":"sLaser1","order":1,"path":"sprites/sLaser1/sLaser1.yy",},
+    {"name":"pMetalDebris","order":19,"path":"objects/pMetalDebris/pMetalDebris.yy",},
     {"name":"sprite65_spaceparts_57","order":21,"path":"sprites/sprite65_spaceparts_57/sprite65_spaceparts_57.yy",},
     {"name":"spr_smp_shield_directed","order":1,"path":"sprites/spr_smp_shield_directed/spr_smp_shield_directed.yy",},
     {"name":"pWarpRings","order":5,"path":"objects/pWarpRings/pWarpRings.yy",},

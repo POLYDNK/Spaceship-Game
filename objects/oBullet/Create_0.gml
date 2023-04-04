@@ -1,4 +1,6 @@
-/// @desc Create Trail
+/// @desc Create trail, declare vars
+
+damage = 5;
 
 vsp = 0; // Vertical Speed
 hsp = 0; // Horizontal Speed

@@ -42,8 +42,20 @@ if (validTargetFound == true)
 		maxDirection = other.direction + 25;
 		sprite = other.particleHitSprite;
 	}
-	instance_create_layer(other.x, other.y, layer, pTinyDebris);
 	
+	// Spawn different particles based on damage dealt
+	if (other.team != TEAM.NEUTRAL)
+	{
+		if (damage >= 10)
+		{
+			instance_create_layer(other.x, other.y, layer, pMetalDebris);
+		}
+		else
+		{
+			instance_create_layer(other.x, other.y, layer, pTinyDebris);
+		}
+	}
+
 	// Screen shake
 	ApplyScreenshake(0.8, 1, 30);
 	

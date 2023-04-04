@@ -230,6 +230,7 @@
     {"id":{"name":"spr_smp_moon_3","path":"sprites/spr_smp_moon_3/spr_smp_moon_3.yy",},},
     {"id":{"name":"oMars","path":"objects/oMars/oMars.yy",},},
     {"id":{"name":"sLaser1","path":"sprites/sLaser1/sLaser1.yy",},},
+    {"id":{"name":"pMetalDebris","path":"objects/pMetalDebris/pMetalDebris.yy",},},
     {"id":{"name":"sprite65_spaceparts_57","path":"sprites/sprite65_spaceparts_57/sprite65_spaceparts_57.yy",},},
     {"id":{"name":"spr_smp_shield_directed","path":"sprites/spr_smp_shield_directed/spr_smp_shield_directed.yy",},},
     {"id":{"name":"spr_smp_billboards_left","path":"sprites/spr_smp_billboards_left/spr_smp_billboards_left.yy",},},

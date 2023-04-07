@@ -18,6 +18,6 @@ if (open)
 	draw_set_alpha(1);
 	draw_set_color(c_orange);
 	DrawSetText(c_white, fMenu, fa_middle, fa_top);
-	draw_text(textX, winY-header_height, speaker);
-	draw_text_ext(textX, winY+text_margin, body, 5, box_width-text_margin);
+	draw_text(textX, winY-header_height, dialogue_script.get_speaker());
+	draw_text_ext(textX, winY+text_margin, dialogue_script.get_current_line(), 50, box_width-text_margin);
 }

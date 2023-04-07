@@ -4,6 +4,10 @@ if (global.pause == false)
 {
 	if (prevPause == true)
 	{
+		// Make pause layer visible
+		var pauseLayer = layer_background_get_id("Pause");
+		layer_background_alpha(pauseLayer, 0);
+		
 		// Special activation for ships
 		for (var i = 0; i < instance_number(oShip); ++i;)
 		{
@@ -30,6 +34,10 @@ else
 {
 	if (prevPause == false)
 	{
+		// Make pause layer invisible
+		var pauseLayer = layer_background_get_id("Pause");
+		layer_background_alpha(pauseLayer, 0.75);
+		
 		// Special deactivation for ships
 		for (var i = 0; i < instance_number(oShip); ++i;)
 		{

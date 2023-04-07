@@ -8,7 +8,7 @@ if (cObj != noone)
 {
 	// If the player wasn't colliding on the last step, then
 	// open the dialoue box up
-	dialogue.hidden = false;
+	myPopup.hidden = false;
 	
 	playerCollision = true;
 }
@@ -16,7 +16,7 @@ else
 {
 	// If the play was colliding on the last step, then
 	// close the dialogue box
-	dialogue.hidden = true;
+	myPopup.hidden = true;
 	
 	playerCollision = false;
 }

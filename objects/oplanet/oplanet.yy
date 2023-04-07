@@ -34,7 +34,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"orbit_color","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"$FF00CCFF","varType":7,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"orbit_object","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oSun","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"show_orbit","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"True","varType":3,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dialogue","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"Hello!\"","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"dialogueArray","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"global.blank_message","varType":4,},
   ],
   "solid": false,
   "spriteId": null,

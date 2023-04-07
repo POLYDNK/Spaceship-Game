@@ -2,5 +2,5 @@
 
 if (!hidden)
 {
-	toggleDialogue(speaker.planetName, speaker.dialogue);
+	toggleDialogue(speaker.dialogue);
 }

@@ -46,3 +46,6 @@ enum DIRECTION
 SetResolution(RES_W, RES_H);
 display_set_gui_size(RES_W, RES_H);
 window_set_fullscreen(true);
+
+// Get Pause Layer
+

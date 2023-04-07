@@ -1,10 +1,59 @@
 // Functions to Control Dialogue
 global.dialogueOpen = false;
 
-/// @desc displayDialogue(speaker, body) Displays dialogue on the screen
-/// @arg speaker - name of the speaker speaking (string)
-/// @arg body    - what the speaker is saying (string)
-function displayDialogue(argument0 = "", argument1 = "")
+/// @desc DialogueScript(_textArray) Constructs a script object
+/// @arg _textArray - A text array that contains each line of a script
+/// @arg _speaker - The name of the speaker
+function DialogueScript(_textArray, _speaker) constructor
+{
+    // Initialize the text array and current line
+    text = _textArray;
+	speaker = _speaker;
+    current_line = 0;
+	
+	// Method to get the current line of dialogue
+    function get_current_line()
+	{
+		var line = "";
+		
+        if (current_line < array_length(text))
+		{
+            line = text[current_line];
+        }
+		
+        return line;
+    };
+
+    // Method to get the next line of dialogue
+    function get_next_line()
+	{
+		var line = "";
+		
+        if (current_line < array_length(text))
+		{
+            line = text[current_line];
+            current_line++;
+        }
+		
+        return line; // Return an empty string when there's no more dialogue
+    };
+	
+	// Method to get the speaker's name
+    function get_speaker()
+	{
+        return speaker;
+    };
+
+    // Method to reset the dialogue script
+    function reset()
+	{
+        current_line = 0;
+    };
+}
+
+/// @desc displayDialogue(script) Displays dialogue on the screen
+/// @arg script - reference to dialogue script object
+function displayDialogue(argument0)
 {
 	dialogueObj = instance_find(guiOnScreenDialogue, 0);
 	
@@ -16,10 +65,13 @@ function displayDialogue(argument0 = "", argument1 = "")
 	}
 	
 	// Display the dialogue
-	dialogueObj.speaker = argument0;
-	dialogueObj.body = argument1;
+	dialogueObj.dialogue_script = argument0;
 	dialogueObj.open = true;
+	dialogueObj.interactTimer = dialogueObj.interactWait;
+	
+	// Set flags
 	global.dialogueOpen = true;
+	global.pause = true;
 }
 
 /// @desc closeDialogue() Closes the dialogue box on screen
@@ -36,22 +88,24 @@ function closeDialogue()
 	
 	// Close Dialogue Box
 	dialogueObj.open = false;
+	
+	// Set flags
+	global.dialogueOpen = false;
+	global.pause = false
 }
 
 /// @desc displayDialogue(speaker, body) Toggles dialogue on the screen
-/// @arg speaker - name of the speaker speaking (string)
-/// @arg body    - what the speaker is saying (string)
-function toggleDialogue(argument0 = "", argument1 = "")
+/// @arg script - reference to dialogue script object
+function toggleDialogue(argument0)
 {
 	if (global.dialogueOpen == false)
 	{
-		displayDialogue(argument0, argument1);
-		global.dialogueOpen = true;
+		displayDialogue(argument0);
+		
 	}
 	else
 	{
 		closeDialogue();
-		global.dialogueOpen = false;
 	}
 }
 

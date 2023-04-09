@@ -1,6 +1,6 @@
 /// @desc Menu Control
 
-if (keyboard_check(ord("F")))
+if (keyboard_check(ord("F")) and global.dialogueOpen == false)
 {
 	// Pause While Viewing
 	global.pause = true;

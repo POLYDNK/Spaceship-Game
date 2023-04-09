@@ -21,7 +21,7 @@ if (justCreated)
 }
 
 // If currently spawning enemies
-if (spawning and instance_exists(oPlayer))
+if (!global.pause and spawning and instance_exists(oPlayer))
 {
 	spawnTimer--;
 	

@@ -12,4 +12,4 @@ myPopup.text = "Contact";
 myPopup.speaker = self;
 
 // My dialogue object
-dialogue = new DialogueScript(dialogueArray, planetName);
+dialogue = new DialogueScript(dialogueArray);

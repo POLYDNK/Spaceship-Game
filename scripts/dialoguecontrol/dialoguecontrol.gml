@@ -3,45 +3,61 @@ global.dialogueOpen = false;
 
 /// @desc DialogueScript(_textArray) Constructs a script object
 /// @arg _textArray - A text array that contains each line of a script
-/// @arg _speaker - The name of the speaker
-function DialogueScript(_textArray, _speaker) constructor
+function DialogueScript(_textArray) constructor
 {
     // Initialize the text array and current line
     text = _textArray;
-	speaker = _speaker;
     current_line = 0;
 	
-	// Method to get the current line of dialogue
-    function get_current_line()
+	/// @desc get_current_line(filtered) Method to get the current line of dialogue
+	/// @arg filtered - whether parts, such as the speaker, are filtered out of the array
+	function get_current_line(filtered = true)
 	{
-		var line = "";
-		
-        if (current_line < array_length(text))
-		{
-            line = text[current_line];
-        }
-		
-        return line;
-    };
+	    var line = "";
+    
+	    // If the current line isn't an empty string, then return it
+	    if (current_line < array_length(text))
+	    {
+	        line = text[current_line];
+        
+	        // Filter out speaker
+	        if (filtered)
+	        {
+	            _lineParts = string_split(line, ": ");
+            
+	            if (array_length(_lineParts) > 1)
+	            {
+	                line = _lineParts[1];
+	            }
+	        }
+	    }
+    
+	    return line; // Else, return it as empty
+	};
 
     // Method to get the next line of dialogue
     function get_next_line()
 	{
-		var line = "";
+		var line_string = "";
+		var next_line = current_line + 1; 
 		
-        if (current_line < array_length(text))
+		// If the next line isn't an empty string, then return it
+        if (next_line < array_length(text))
 		{
-            line = text[current_line];
-            current_line++;
+            line_string = text[next_line];
         }
 		
-        return line; // Return an empty string when there's no more dialogue
+		// Go to the next line when this is called
+		current_line++;
+		
+        return line_string; // Else, return it as empty
     };
 	
 	// Method to get the speaker's name
     function get_speaker()
 	{
-        return speaker;
+		var _lineParts = string_split(get_current_line(false), ":");
+        return _lineParts[0];
     };
 
     // Method to reset the dialogue script

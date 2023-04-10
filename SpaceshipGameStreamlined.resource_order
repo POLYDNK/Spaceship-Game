@@ -396,6 +396,7 @@
     {"name":"snLaser2","order":3,"path":"sounds/snLaser2/snLaser2.yy",},
     {"name":"spr_smp_spaceship_freighter_5","order":14,"path":"sprites/spr_smp_spaceship_freighter_5/spr_smp_spaceship_freighter_5.yy",},
     {"name":"sprite72_spaceparts_64","order":28,"path":"sprites/sprite72_spaceparts_64/sprite72_spaceparts_64.yy",},
+    {"name":"Sprite277","order":17,"path":"sprites/Sprite277/Sprite277.yy",},
     {"name":"spr_smp_asteroid_small","order":2,"path":"sprites/spr_smp_asteroid_small/spr_smp_asteroid_small.yy",},
     {"name":"guiMenuButton","order":7,"path":"objects/guiMenuButton/guiMenuButton.yy",},
     {"name":"oLaserMachine1","order":2,"path":"objects/oLaserMachine1/oLaserMachine1.yy",},

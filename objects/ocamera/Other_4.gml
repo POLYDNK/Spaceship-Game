@@ -24,7 +24,3 @@ shake_remain = 0;
 
 // Zoom Slider
 //zoomSlider = instance_create_layer(544,704,"GUI",guiSlider);
-
-// Minimap
-miniMap = instance_create_layer(view_w_half, 64, "GUI", oMinimap);
-

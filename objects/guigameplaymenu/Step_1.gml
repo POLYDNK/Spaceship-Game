@@ -41,6 +41,7 @@ if (keyboard_check(ord("F")) and global.dialogueOpen == false)
 			break;
 		case TABS.SOLAR_SYSTEM_MAP:
 			instance_activate_object(solar_menu);
+			event_perform_object(solar_menu, ev_user0, 0);
 			instance_deactivate_object(inventory_menu);
 			crafting_menu_button.selected = false;
 			inventory_menu_button.selected = false;

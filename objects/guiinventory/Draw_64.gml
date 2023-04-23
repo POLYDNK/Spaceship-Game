@@ -29,6 +29,15 @@ if (playerShip != noone)
 		var X = menuX + spriteInfo.xoffset + global.playerInventory.modules[i].x_pos - (box_W/2);
 		var Y = menuY + spriteInfo.yoffset + global.playerInventory.modules[i].y_pos - (box_H/2);
 		
+		
+		/* Experimenting with drawing modules at the location of the ship itself
+		// The tricky part is integrating it with mouse interaction
+		var halfW = display_get_width() / 2;
+		var halfH = display_get_height() / 2;
+		var X = (playerShip.x - oCamera.x) + global.playerInventory.modules[i].x_pos - (box_W/2) + halfW;
+		var Y = (playerShip.y - oCamera.y) + spriteInfo.yoffset + global.playerInventory.modules[i].y_pos - (box_H/2) + halfH;
+		*/
+		
 		// Draw Module
 		var wep_icon = sWeaponTypeIcon;
 		var siz_icon = sSmallSizeIcon;
@@ -72,6 +81,8 @@ if (playerShip != noone)
 		draw_sprite_stretched(sprite, 0, X, Y, box_W, box_H);
 		draw_sprite_stretched(wep_icon, 0, X+(box_W*0.75), Y+(box_H*0.75), box_W*0.25, box_H*0.25);
 		draw_sprite_stretched(siz_icon, 0, X, Y+(box_H*0.75), box_W*0.25, box_H*0.25);
+		
+		// Draw box outline
 		draw_rectangle(X+1, Y+1, X+box_W-1, Y+box_H-1, true);
 	}
 	
@@ -118,7 +129,16 @@ if (playerShip != noone)
 		}
 		
 		// Draw box outline
+		if (item_selected and i == selected_item)
+		{
+			draw_set_color(c_yellow);
+		}
+		else
+		{
+			draw_set_color(c_white);
+		}
 		draw_rectangle(box_X+1, box_Y+1, box_X + box_W-1, box_Y + box_H-1, true);
+		
 		
 		// Update Counters
 		row_counter++;
@@ -136,8 +156,10 @@ if (playerShip != noone)
 	// Draw held box
 	if (holding_item)
 	{
-		draw_sprite_stretched(global.playerInventory.inventory[item_held]._sprite, 0, mouseX-(box_W/2), mouseY-(box_H/2), box_W, box_H);
+		var item = global.playerInventory.inventory[item_held];
+		draw_sprite_stretched(item._sprite, 0, mouseX-(box_W/2), mouseY-(box_H/2), box_W, box_H);
 	}
+	
 	
 	// Draw resources
 	var resourceX = invenX + (row_length * box_W) + 50;

@@ -122,7 +122,7 @@ function Inventory(slots) constructor
 				
 			case ITEM.AQUACANNON:
 				delete inventory[index];
-				inventory[index] = new Item("Laser Cannon", sAquaCannon, ITEM.AQUACANNON, oAquaCannonPickup, oAquaCannon, TYPE.WEAPON);
+				inventory[index] = new Item("Aqua Cannon", sAquaCannon, ITEM.AQUACANNON, oAquaCannonPickup, oAquaCannon, TYPE.WEAPON);
 				break;
 				
 			case ITEM.CRESCENTGUN:

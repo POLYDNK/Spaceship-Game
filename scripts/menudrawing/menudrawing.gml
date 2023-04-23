@@ -60,13 +60,17 @@ function DrawSolarMap(xPos, yPos, map_width, map_height, map_x, map_y)
             }
     
             // Draw Circle
-            if (i != global.current_solar_system)
+            if (i == global.current_solar_system)
             {
-                draw_set_color(c_aqua);
+				draw_set_color(c_red);
             }
+			else if (currSolar.visited)
+			{
+				draw_set_color(c_yellow);
+			}
             else
             {
-                draw_set_color(c_red);
+                draw_set_color(c_aqua);
             }            
             draw_set_alpha(1);
             draw_circle(X, Y, 20, false);

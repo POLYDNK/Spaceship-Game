@@ -3,8 +3,9 @@
 randomize(); // New Seed
 
 NUMBER_OF_SOLAR_SYSTEMS = 20; // The number of solar systems in the galaxy
-min_dist = 100;                // Minimum distance solar spawn from each other
+min_dist = 100;               // Minimum distance solar spawn from each other
 max_dist = 200;               // Maximum distance solar spawn from each other
+right_bias = 90;              // Bias to be generated in the right direction
 edges_empty[0] = -1;          // Edges store indexes of solar systems, -1 = null
 
 var curr_X = 0;
@@ -27,11 +28,11 @@ for (var i = 1; i < NUMBER_OF_SOLAR_SYSTEMS; i++)
     while (!validPosition)
     {
         // Get a random position away from the previous galaxy
-        var randX = random_range(min_dist, max_dist);
-        curr_X += choose(-randX, randX);
+        var randX = random_range(min_dist, max_dist) ;
+        curr_X += choose(-randX + right_bias, randX);
 
         var randY = random_range(min_dist, max_dist);
-        curr_Y += choose(-randY, randY);
+        curr_Y += choose(-randY + right_bias, randY);
 
         validPosition = true;
 
@@ -47,7 +48,8 @@ for (var i = 1; i < NUMBER_OF_SOLAR_SYSTEMS; i++)
     }
 
     // Create solar system
-    global.galaxy[i] = new solar_system(i, curr_X, curr_Y, edges_empty);
+	var backSprite = choose(sNebulaMystic, sNebulaPurple, sNebulaRedBlue, sNebulaRedPink, sNebulaRedWhite);
+    global.galaxy[i] = new solar_system(i, curr_X, curr_Y, edges_empty, backSprite);
     
     // Iterate through the graph to create edges based on
     // the distance of neighboring solar systems
@@ -102,3 +104,6 @@ for (var i = 0; i < array_length(global.galaxy); i++)
 {
 	generate_solar_system(global.galaxy[i].my_room);
 }
+
+// Flag first solar system as visited
+global.galaxy[global.current_solar_system].visited = true;

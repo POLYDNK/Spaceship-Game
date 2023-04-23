@@ -42,6 +42,8 @@ if (playerShip != noone)
 			if (mouse_check_button_pressed(mb_right))
 			{
 				global.playerInventory.drop_item(i, playerShip.x+random_range(-75,75), playerShip.y+random_range(-75,75));
+				holding_item = false;
+				selected_item = false;
 			}
 			
 			// Picking up items on left click
@@ -49,8 +51,13 @@ if (playerShip != noone)
 			{
 				if (global.playerInventory.inventory[i]._id != ITEM.BLANK)
 				{
-					holding_item = true;
+					// Holding
+					holding_item = true;			
 					item_held = i;
+					
+					// Selection toggle
+					item_selected = !item_selected;
+					selected_item = i;
 				}
 			}
 			// Letting go of items when left click is released
@@ -92,4 +99,3 @@ if (playerShip != noone)
 		}
 	}
 }
-

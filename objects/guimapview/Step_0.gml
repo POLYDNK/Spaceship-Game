@@ -1,7 +1,7 @@
 /// @desc Drag map around using the mouse
 
 // Check if the left mouse button is pressed
-if (mouse_check_button(mb_left) and interactable)
+if (mouse_check_button(mb_left))
 {
     // Check if this is the first frame the mouse button is pressed
     if (mouse_check_button_pressed(mb_left))

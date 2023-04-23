@@ -14,6 +14,9 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d533ac9f-2e68-4227-bfec-129cd935a2e3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"54259c21-f3b2-4bca-8408-122b6495c9b9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7c81e6a0-d173-427a-a765-4003bf89a8ff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad978b0b-1a70-426f-a85c-af02a1abe6fa",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,11 +46,11 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 4.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
-    "playbackSpeed": 30.0,
+    "playbackSpeed": 0.0,
     "playbackSpeedType": 0,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -55,6 +58,9 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"d533ac9f-2e68-4227-bfec-129cd935a2e3","path":"sprites/sAquaFreight/sAquaFreight.yy",},},},"Disabled":false,"id":"b3cfa0fa-476a-4595-a1d1-afcd3007dbbc","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"54259c21-f3b2-4bca-8408-122b6495c9b9","path":"sprites/sAquaFreight/sAquaFreight.yy",},},},"Disabled":false,"id":"b9940878-b105-4f06-85fb-68759b6e3d1a","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7c81e6a0-d173-427a-a765-4003bf89a8ff","path":"sprites/sAquaFreight/sAquaFreight.yy",},},},"Disabled":false,"id":"9115623b-d420-4cb0-a943-fc5c8375f515","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"ad978b0b-1a70-426f-a85c-af02a1abe6fa","path":"sprites/sAquaFreight/sAquaFreight.yy",},},},"Disabled":false,"id":"8e71bd17-d46b-475b-bf1e-2d81883f5f75","IsCreationKey":false,"Key":3.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

@@ -23,9 +23,12 @@ if (collision_circle(x, y, 400, oPlayer, false ,true))
 		// Get target solar system
 		var target_solar_system = global.galaxy[destination];
 		
-		// Reverse Player Pos
+		// Invert Player Pos
 		oPlayer.x = -oPlayer.x;
 		oPlayer.y = -oPlayer.y;
+		
+		// Set flag
+		target_solar_system.visited = true;
 		
 		// Go to target solar system
 		global.current_solar_system = destination;

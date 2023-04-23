@@ -1,10 +1,16 @@
 /// @desc Menu Control
 
-if (keyboard_check(ord("F")) and global.dialogueOpen == false)
+// Menu toggle
+if (keyboard_check_pressed(ord("F")))
+{
+	menu_open = !menu_open;
+}
+
+// Activation/Deactivation of menu objects
+if (menu_open and global.dialogueOpen == false)
 {
 	// Pause While Viewing
 	global.pause = true;
-	menu_open = true;
 	
 	// Activate Buttons
 	instance_activate_object(crafting_menu_button);
@@ -51,9 +57,8 @@ if (keyboard_check(ord("F")) and global.dialogueOpen == false)
 		default:
 			break;
 	}
-	
 }
-else if (menu_open == true)
+else
 {
 	// Deactivate menu objects
 	instance_deactivate_object(solar_menu);
@@ -66,6 +71,5 @@ else if (menu_open == true)
 	instance_deactivate_object(solar_menu_button);
 	
 	global.pause = false;
-	menu_open = false;
 }
 

@@ -1,5 +1,8 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/// @desc generate_solar_system(target_room) Generates a solar system for a target room
+/// @arg target_room - the room to generate a solar system in
+
+// Backround sprite
+global.BackgroundSprite = sNebulaPurple;
 
 function generate_solar_system(target_room)
 {

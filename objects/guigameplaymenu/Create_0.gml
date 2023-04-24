@@ -11,17 +11,6 @@ full_y = RES_H - margin_y;
 // Menu Open
 menu_open = false;
 
-// Menu Tabs
-enum TABS
-{
-	CRAFTING,
-	INVENTORY,
-	SHIP_CONFIG,
-	SOLAR_SYSTEM_MAP
-};
-
-current_tab = TABS.SOLAR_SYSTEM_MAP;
-
 // My menu objects
 solar_menu = noone;
 inventory_menu = noone;

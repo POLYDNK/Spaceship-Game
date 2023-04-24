@@ -310,6 +310,7 @@
     {"id":{"name":"sSmallBubble","path":"sprites/sSmallBubble/sSmallBubble.yy",},},
     {"id":{"name":"IsInCamera","path":"scripts/IsInCamera/IsInCamera.yy",},},
     {"id":{"name":"sprite47_spaceparts_23","path":"sprites/sprite47_spaceparts_23/sprite47_spaceparts_23.yy",},},
+    {"id":{"name":"guiItemCard","path":"objects/guiItemCard/guiItemCard.yy",},},
     {"id":{"name":"oDisplayDamage","path":"objects/oDisplayDamage/oDisplayDamage.yy",},},
     {"id":{"name":"sprite58_spaceparts50","path":"sprites/sprite58_spaceparts50/sprite58_spaceparts50.yy",},},
     {"id":{"name":"oEnemySpawner","path":"objects/oEnemySpawner/oEnemySpawner.yy",},},

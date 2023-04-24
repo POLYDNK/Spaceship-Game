@@ -42,6 +42,17 @@ enum DIRECTION
 	RIGHTFORWARD
 }
 
+// Menu Tabs
+enum TABS
+{
+	CRAFTING,
+	INVENTORY,
+	SHIP_CONFIG,
+	SOLAR_SYSTEM_MAP
+};
+
+global.current_tab = TABS.SOLAR_SYSTEM_MAP;
+
 // Game Init
 SetResolution(RES_W, RES_H);
 display_set_gui_size(RES_W, RES_H);

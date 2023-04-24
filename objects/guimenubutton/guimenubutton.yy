@@ -33,7 +33,6 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"width","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"200","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"height","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"50","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"text","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"Sample Text","varType":2,},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"target_menu","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"guiGameplayMenu","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"target_tab","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,

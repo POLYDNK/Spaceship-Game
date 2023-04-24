@@ -37,6 +37,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"keyboardKey","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"shieldStrength","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"40","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"shieldDuration","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"600","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"activeType","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"ACTIVE.SHIELD","varType":0,},
   ],
   "solid": false,
   "spriteId": null,

@@ -31,6 +31,11 @@ enum TYPE
 	OTHER
 }
 
+enum ACTIVE
+{
+	SHIELD
+}
+
 enum SIZE
 {
 	SMALL,
@@ -50,56 +55,18 @@ function Inventory(slots) constructor
 	/// @arg item_id - the type, or, id of item to add
 	function add_item(item_id)
 	{
-		switch(item_id)
+		var item = create_item(item_id);
+
+		// Iron doesn't take inventory slots
+	    if (item_id == ITEM.IRON)
 		{
-			case ITEM.BLANK:
-				inventory[find_blank_slot()] = new Item();
-				break;
-				
-			case ITEM.IRON:
-				//inventory[find_blank_slot()] = new Item("Iron", sIron, ITEM.IRON, oIron, oIron, TYPE.MATERIAL);
-				iron++;
-				break;
-				
-			case ITEM.LASERMACHINE:
-				inventory[find_blank_slot()] = new Item("Laser Machine Gun", sLaserMachine1, ITEM.LASERMACHINE, oLaserMachinePickup, oLaserMachine1, TYPE.WEAPON);
-				break;
-				
-			case ITEM.LASERCANNON:
-				inventory[find_blank_slot()] = new Item("Laser Cannon", sLaserCannon, ITEM.LASERCANNON, oLaserCannonPickup, oLaserCannon, TYPE.WEAPON);
-				break;
-				
-			case ITEM.AQUACANNON:
-				inventory[find_blank_slot()] = new Item("Laser Cannon", sAquaCannon, ITEM.AQUACANNON, oAquaCannonPickup, oAquaCannon, TYPE.WEAPON);
-				break;
-				
-			case ITEM.CRESCENTGUN:
-				inventory[find_blank_slot()] = new Item("Crescent Gun", sCrescentGun, ITEM.CRESCENTGUN, oCrescentGunPickup, oCrescentGun, TYPE.WEAPON);
-				break;
-				
-			case ITEM.SMALLDRILL:
-				inventory[find_blank_slot()] = new Item("Small Drill", sSmallDrill, ITEM.SMALLDRILL, oSmallDrillPickup, oSmallDrill, TYPE.WEAPON);
-				break;
-				
-			case ITEM.SMALLENGINE:
-				inventory[find_blank_slot()] = new Item("Small Engine", sSmallEngine, ITEM.SMALLENGINE, oSmallEnginePickup, oSmallEngine, TYPE.ENGINE);
-				break;
-				
-			case ITEM.MEDIUMENGINE:
-				inventory[find_blank_slot()] = new Item("Medium Engine", sMediumEngine, ITEM.MEDIUMENGINE, oMediumEnginePickup, oMediumEngine, TYPE.ENGINE);
-				break;
-				
-			case ITEM.SMALLBUBBLE:
-				inventory[find_blank_slot()] = new Item("Small Bubble", sSmallBubble, ITEM.SMALLBUBBLE, oSmallBubblePickup, oSmallBubble, TYPE.ACTIVE);
-				break;
-				
-			case ITEM.MEDIUMBUBBLE:
-				inventory[find_blank_slot()] = new Item("Medium Bubble", sMediumBubble, ITEM.MEDIUMBUBBLE, oMediumBubblePickup, oMediumBubble, TYPE.ACTIVE);
-				break;
-				
-			default:
-				break;
-		}
+	        iron++;
+	    }
+		// Fill a blank slot w/ the new item
+		else if (item != -1)
+		{
+	        inventory[find_blank_slot()] = item;
+	    }
 	}
 	
 	/// @desc replace_module(item_id, index) Add a module to player inventory at a specified index
@@ -107,60 +74,54 @@ function Inventory(slots) constructor
 	/// @arg index   - the inventory index to add item to
 	function replace_module(item_id, index)
 	{
+		var item = create_item(item_id);
+
+	    if (item != -1)
+		{
+	        delete inventory[index];
+	        inventory[index] = item;
+	        module_spawn(index);
+	    }
+	}
+	
+	/// @desc create_item(item_id) Create an item based on an id and return it
+	/// @arg item_id - the id of the item to create
+	/// @ret The item created, returns -1 if the id is invalid
+	function create_item(item_id)
+	{
 		// Create Item
 		switch(item_id)
 		{
 			case ITEM.LASERMACHINE:
-				delete inventory[index];
-				inventory[index] = new Item("Laser Machine Gun", sLaserMachine1, ITEM.LASERMACHINE, oLaserMachinePickup, oLaserMachine1, TYPE.WEAPON);
-				break;
+				return new Item("Laser Machine Gun", sLaserMachine1, ITEM.LASERMACHINE, oLaserMachinePickup, oLaserMachine1, TYPE.WEAPON);
 				
 			case ITEM.LASERCANNON:
-				delete inventory[index];
-				inventory[index] = new Item("Laser Cannon", sLaserCannon, ITEM.LASERCANNON, oLaserCannonPickup, oLaserCannon, TYPE.WEAPON);
-				break;
+				return new Item("Laser Cannon", sLaserCannon, ITEM.LASERCANNON, oLaserCannonPickup, oLaserCannon, TYPE.WEAPON);
 				
 			case ITEM.AQUACANNON:
-				delete inventory[index];
-				inventory[index] = new Item("Aqua Cannon", sAquaCannon, ITEM.AQUACANNON, oAquaCannonPickup, oAquaCannon, TYPE.WEAPON);
-				break;
+				return new Item("Aqua Cannon", sAquaCannon, ITEM.AQUACANNON, oAquaCannonPickup, oAquaCannon, TYPE.WEAPON);
 				
 			case ITEM.CRESCENTGUN:
-				delete inventory[index];
-				inventory[index] = new Item("Crescent Gun", sCrescentGun, ITEM.CRESCENTGUN, oCrescentGunPickup, oCrescentGun, TYPE.WEAPON);
-				break;
+				return new Item("Crescent Gun", sCrescentGun, ITEM.CRESCENTGUN, oCrescentGunPickup, oCrescentGun, TYPE.WEAPON);
 				
 			case ITEM.SMALLDRILL:
-				delete inventory[index];
-				inventory[index] = new Item("Small Drill", sSmallDrill, ITEM.SMALLDRILL, oSmallDrillPickup, oSmallDrill, TYPE.WEAPON);
-				break;
+				return new Item("Small Drill", sSmallDrill, ITEM.SMALLDRILL, oSmallDrillPickup, oSmallDrill, TYPE.WEAPON);
 				
 			case ITEM.SMALLENGINE:
-				delete inventory[index];
-				inventory[index] = new Item("Small Engine", sSmallEngine, ITEM.SMALLENGINE, oSmallEnginePickup, oSmallEngine, TYPE.ENGINE);
-				break;
+				return new Item("Small Engine", sSmallEngine, ITEM.SMALLENGINE, oSmallEnginePickup, oSmallEngine, TYPE.ENGINE);
 				
 			case ITEM.MEDIUMENGINE:
-				delete inventory[index];
-				inventory[index] = new Item("Medium Engine", sMediumEngine, ITEM.MEDIUMENGINE, oMediumEnginePickup, oMediumEngine, TYPE.ENGINE);
-				break;
+				return new Item("Medium Engine", sMediumEngine, ITEM.MEDIUMENGINE, oMediumEnginePickup, oMediumEngine, TYPE.ENGINE);
 				
 			case ITEM.SMALLBUBBLE:
-				delete inventory[index];
-				inventory[index] = new Item("Small Bubble", sSmallBubble, ITEM.SMALLBUBBLE, oSmallBubblePickup, oSmallBubble, TYPE.ACTIVE);
-				break;
+				return new Item("Small Bubble", sSmallBubble, ITEM.SMALLBUBBLE, oSmallBubblePickup, oSmallBubble, TYPE.ACTIVE);
 				
 			case ITEM.MEDIUMBUBBLE:
-				delete inventory[index];
-				inventory[index] = new Item("Medium Bubble", sMediumBubble, ITEM.MEDIUMBUBBLE, oMediumBubblePickup, oMediumBubble, TYPE.ACTIVE);
-				break;
+				return new Item("Medium Bubble", sMediumBubble, ITEM.MEDIUMBUBBLE, oMediumBubblePickup, oMediumBubble, TYPE.ACTIVE);
 				
 			default:
-				break;
+				return -1;
 		}
-		
-		// Spawn Item
-		module_spawn(index);
 	}
 	
 	/// @desc find_blank_slot() Get the index of the first blank item, returns -1 if it can't be found
@@ -445,6 +406,43 @@ function Item(item_name = "DEFAULT_NAME", item_sprite = sBlank, item_id = ITEM.B
 	_object = item_object;
 	_type = item_type;
 	_instance = noone;
+	_properties = array_create(0);
+	
+	// Get object properties by creating it
+	if (_object != noone)
+	{
+		var tempObj = instance_create_layer(0, 0, layer_get_id("Instances"), _object)
+		
+		switch (_type)
+		{
+			case TYPE.WEAPON:
+				array_push(_properties, "Damage: " + string(tempObj.projectileDamage));
+				array_push(_properties, "Dispersion: " + string(tempObj.dispersion));
+				array_push(_properties, "Fire Rate: " + string(60/tempObj.firerate * 60) + " r/m");
+				array_push(_properties, "Projectile Speed: " + string(tempObj.projectileSpeed));
+				array_push(_properties, "Projectile Count: " + string(tempObj.projectileCount));
+				break;
+				
+			case TYPE.ENGINE:
+				array_push(_properties, "Engine Power: " + string(tempObj.enginePower));
+				break;
+				
+			case TYPE.ACTIVE:
+				array_push(_properties, "Cooldown: " + string(tempObj.cooldown));
+				
+				if (tempObj.activeType == ACTIVE.SHIELD)
+				{
+					array_push(_properties, "Shield Strength: " + string(tempObj.shieldStrength));
+					array_push(_properties, "Shield Duration: " + string(tempObj.shieldDuration));
+				}
+				break;
+				
+			default:
+				break;
+		}
+		
+		instance_destroy(tempObj);
+	}
 }
 
 /// @desc Module() Creates a new module

@@ -12,6 +12,10 @@ if (playerShip != noone)
 	// Get Sprite Info
 	spriteInfo = sprite_get_info(playerShip.sprite_index);
 	
+	// Reposition item card
+	item_card.x = menuX + 50 + playerShip.sprite_width;
+	item_card.y = menuY + 200;
+	
 	// Get inventory grid vars
 	var mouseX = device_mouse_x_to_gui(0);
 	var mouseY = device_mouse_y_to_gui(0);
@@ -44,6 +48,7 @@ if (playerShip != noone)
 				global.playerInventory.drop_item(i, playerShip.x+random_range(-75,75), playerShip.y+random_range(-75,75));
 				holding_item = false;
 				selected_item = false;
+				item_card.open = false;
 			}
 			
 			// Picking up items on left click
@@ -52,7 +57,9 @@ if (playerShip != noone)
 				if (global.playerInventory.inventory[i]._id != ITEM.BLANK)
 				{
 					// Holding
-					holding_item = true;			
+					holding_item = true;
+					item_card.open = true;
+					item_card.item = global.playerInventory.inventory[i];
 					item_held = i;
 					
 					// Selection toggle

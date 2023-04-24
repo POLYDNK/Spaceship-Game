@@ -15,6 +15,6 @@ if (menu_open)
 	
 	// Draw Current Tab
 	DrawSetText(c_white, fMenu, fa_left, fa_top);
-	draw_text(margin_x, full_y + 20, "Current Tab: " + string(current_tab));
+	draw_text(margin_x, full_y + 20, "Current Tab: " + string(global.current_tab));
 }
 

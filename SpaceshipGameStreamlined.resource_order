@@ -210,6 +210,7 @@
     {"name":"oSmallBubblePickup","order":5,"path":"objects/oSmallBubblePickup/oSmallBubblePickup.yy",},
     {"name":"IsInCamera","order":6,"path":"scripts/IsInCamera/IsInCamera.yy",},
     {"name":"sprite47_spaceparts_23","order":62,"path":"sprites/sprite47_spaceparts_23/sprite47_spaceparts_23.yy",},
+    {"name":"guiItemCard","order":12,"path":"objects/guiItemCard/guiItemCard.yy",},
     {"name":"oDisplayDamage","order":1,"path":"objects/oDisplayDamage/oDisplayDamage.yy",},
     {"name":"sprite58_spaceparts50","order":14,"path":"sprites/sprite58_spaceparts50/sprite58_spaceparts50.yy",},
     {"name":"oEnemySpawner","order":2,"path":"objects/oEnemySpawner/oEnemySpawner.yy",},

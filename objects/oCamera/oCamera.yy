@@ -42,6 +42,8 @@
         "GMObject",
         "GMRoom",
       ],"listItems":null,"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oPlayer","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"minZoom","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0.5","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"maxZoom","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":0,},
   ],
   "solid": false,
   "spriteId": {

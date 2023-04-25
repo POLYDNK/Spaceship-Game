@@ -9,13 +9,14 @@ global.asteroid_spawn.AddSpawn(new Spawn(asteroid_medium, 50));
 global.asteroid_spawn.AddSpawn(new Spawn(asteroid_small, 100));
 
 // Enemy Ship Loot
-global.enemy_ship_loot = new SpawnArray(new Spawn(oIron, 100));
-global.enemy_ship_loot.AddSpawn(new Spawn(oLaserCannonPickup, 20));
-global.enemy_ship_loot.AddSpawn(new Spawn(oAquaCannonPickup, 20));
-global.enemy_ship_loot.AddSpawn(new Spawn(oCrescentGunPickup, 20));
-global.enemy_ship_loot.AddSpawn(new Spawn(oMediumBubblePickup, 20));
-global.enemy_ship_loot.AddSpawn(new Spawn(oMediumEnginePickup, 20));
-global.enemy_ship_loot.AddSpawn(new Spawn(oSmallDrillPickup, 20));
+global.enemy_ship_loot = new SpawnArray(new Spawn(oIron, 20));
+global.enemy_ship_loot.AddSpawn(new Spawn(oLaserMachinePickup, 30));
+global.enemy_ship_loot.AddSpawn(new Spawn(oLaserCannonPickup, 15));
+global.enemy_ship_loot.AddSpawn(new Spawn(oAquaCannonPickup, 15));
+global.enemy_ship_loot.AddSpawn(new Spawn(oCrescentGunPickup, 25));
+global.enemy_ship_loot.AddSpawn(new Spawn(oMediumBubblePickup, 30));
+global.enemy_ship_loot.AddSpawn(new Spawn(oMediumEnginePickup, 30));
+global.enemy_ship_loot.AddSpawn(new Spawn(oSmallDrillPickup, 30));
 
 /// @desc SpawnArray() Creates a new spawn array
 /// @arg firstSpawn - the first object that can be spawned

@@ -9,6 +9,11 @@ camera_set_view_size(cam, 3456, 1944);
 camera_set_view_border(cam, 32, 32);
 camera_set_view_speed(cam, -1, -1);
 
+// Calculate min and max camera sizes
+// Based on zoom values
+cameraMinWidth = camera_get_view_width(cam) * minZoom;
+cameraMaxWidth = camera_get_view_width(cam) * maxZoom;
+
 
 // Variable declarations
 follow = followAlive;
